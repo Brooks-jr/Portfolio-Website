@@ -1,10 +1,10 @@
 /* =================================================
 -                   G E N E R A L 
 ==================================================== */
+
 body {
     font-family: "Roboto Condensed", sans-serif;
 }
-
 
 #fullpage, .fullpage-wrapper {
     height: 100%;
@@ -15,6 +15,7 @@ body {
 /* =================================================
 -                     H E A D E R 
 ==================================================== */
+
 header {
     position: absolute;
     border-bottom: 1px solid black;
@@ -32,7 +33,6 @@ header {
     display: inline-block;
     margin: 0;
 }
-
 
 .header-name h1, .nav-button {
     position: absolute;
@@ -65,21 +65,28 @@ header {
     padding: 14px 10px 10px 10px;
     border: 2px solid #c1b0e9;
     margin-top: 4px;
+    position: absolute;
+    z-index: 999999999999;
 }
 
 .hamburger:hover {
-    background: -moz-linear-gradient(top, rgba(96,81,138,0.67) 0%, rgba(147,131,188,0.67) 53%, rgba(193,176,233,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(96,81,138,0.67) 0%,rgba(147,131,188,0.67) 53%,rgba(193,176,233,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(96,81,138,0.67) 0%,rgba(147,131,188,0.67) 53%,rgba(193,176,233,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab60518a', endColorstr='#c1b0e9',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(96, 81, 138, 0.67) 0%, rgba(147, 131, 188, 0.67) 53%, rgba(193, 176, 233, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(96, 81, 138, 0.67) 0%, rgba(147, 131, 188, 0.67) 53%, rgba(193, 176, 233, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(96, 81, 138, 0.67) 0%, rgba(147, 131, 188, 0.67) 53%, rgba(193, 176, 233, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab60518a', endColorstr='#c1b0e9', GradientType=0);
+    /* IE6-9 */
 }
 
 .nav-button p {
     opacity: .5;
     color: #c1b0e9;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     margin: 0;
     padding-top: 20px;
+    padding-left: 60px;
 }
 
 .header-name, span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after, .nav-overlay a {
@@ -94,6 +101,7 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 /* =================================================
 -                     M E N U 
 ==================================================== */
+
 .nav-overlay {
     height: 100%;
     width: 0;
@@ -101,8 +109,8 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
     transition: .8s;
     overflow-x: hidden;
 }
@@ -123,16 +131,16 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     transition: 0.3s;
 }
 
-
 /* =================================================
 -                     H O M E 
 ==================================================== */
+
 #home .fp-tableCell {
     display: block;
 }
 
 #cover-video, #video-overlay {
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
     position: absolute;
 }
@@ -144,13 +152,18 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     height: auto;
     z-index: -9999;
     filter: brightness(1.8);
+    filter: blur(1px);
+    object-fit: cover;
 }
 
 #video-overlay {
     z-index: -9998;
-    background: -moz-linear-gradient(top, rgba(0,192,206,0.65) 0%, rgba(255,255,255,0.29) 55%, rgba(127,0,127,0.09) 86%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0,192,206,0.65) 0%,rgba(255,255,255,0.29) 55%,rgba(127,0,127,0.09) 86%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0,192,206,0.65) 0%,rgba(255,255,255,0.29) 55%,rgba(127,0,127,0.09) 86%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, rgba(0, 192, 206, 0.65) 0%, rgba(255, 255, 255, 0.29) 55%, rgba(127, 0, 127, 0.09) 86%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 192, 206, 0.65) 0%, rgba(255, 255, 255, 0.29) 55%, rgba(127, 0, 127, 0.09) 86%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 192, 206, 0.65) 0%, rgba(255, 255, 255, 0.29) 55%, rgba(127, 0, 127, 0.09) 86%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 #home-logo {
@@ -161,14 +174,15 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     z-index: -9997;
     background-repeat: no-repeat;
     background-size: contain;
-    transform: scale(.7);
-    top: 10%;
-    right: 3%;
+    transform: scale(.5);
+    top: 2%;
+    right: 1.2%;
 }
 
 /* =================================================
 -                     W O R K 
 ==================================================== */
+
 #work {
     background-color: red;
 }
@@ -176,6 +190,7 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 /* =================================================
 -                     A B O U T 
 ==================================================== */
+
 #about {
     background-color: blue;
 }
@@ -183,7 +198,95 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 /* =================================================
 -                     S O C I A L
 ==================================================== */
+
 #social {
     background-color: gold;
 }
 
+/* =================================================
+-            S C R O L L - I N D I C A T O R
+==================================================== */
+
+.mouse {
+    margin: 30px auto 0 auto;
+    width: 100px;
+    position: absolute;
+    z-index: 99999999;
+    left: 50%;
+    top: 85%;
+    display: inline-block;
+}
+
+.mouse-icon {
+    width: 25px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.mouse-wheel {
+    height: 6px;
+    margin: 2px auto 0;
+    display: block;
+    width: 3px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-animation: 1.6s ease infinite wheel-up-down;
+    -moz-animation: 1.6s ease infinite wheel-up-down;
+    animation: 1.6s ease infinite wheel-up-down;
+}
+
+.mouse p {
+    color: #c1b0e9;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 0;
+    transform: rotate(90deg);
+    padding-left: 50px;
+    font-size: 12px;
+}
+
+@-webkit-keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
+
+@keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
