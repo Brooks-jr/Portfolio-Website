@@ -15,14 +15,14 @@ $(function () {
 var $hamburger = $(".hamburger");
 
 $hamburger.on("click", function (e) {
-    $hamburger.toggleClass("is-active");
-
-    // open menu
-    function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-    }
-    // close menu
-    function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-    }
+    $hamburger.toggleClass("is-active");  
 });
+
+// open menu
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+// close menu
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}

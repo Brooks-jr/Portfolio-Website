@@ -13,7 +13,7 @@
         <meta name="keywords" content="HTML5, CSS3, jQuery, Bootstrap, Web Design, Web Development, Responsive Website, Modern Website"> 
         
         <!-- Browser Tab's Title & Icon -->
-        <title>Brooks Jr.</title>
+        <title>Brooks Jr. | Portfolio</title>
         <link rel="shortcut icon" href="img/logo/favicon.ico">
 
         <!-- GOOGLE FONTS -->
@@ -63,15 +63,22 @@
                     <div class="header-name">
                         <h1>BROOKS<br>JR.</h1>
                     </div>
-    
-                    <nav id="myNav"class="nav-overlay">
-                        <!-- menu button -->
-                        <button class="hamburger hamburger--spin" type="button">
+
+                    <!-- menu button | open-->
+
+                    <div class="nav-button"> 
+                        <p>.Navigate</p> 
+                        <button class="hamburger hamburger--spin open .hvr-shutter-in-vertical" type="button" onclick="openNav()">
+                            
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
                             </span>
                         </button>
-                        <!-- menu content -->
+                    </div>
+                   
+
+                    <!-- menu content-->
+                    <nav id="myNav"class="nav-overlay">
                         <div class="nav-content">
                             <a href="#home-section">.Home</a>
                             <a href="#work-section">.Work</a>
@@ -84,7 +91,6 @@
 
                 <!-- LOGO -->
                 <div id="home-logo">
-                    <img class="home-logo-image" src="img/logo/poly-owl-logo7.png" alt="brooks jr logo">
                 </div>
 
                 <!-- VIDEO -->

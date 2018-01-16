@@ -26,35 +26,69 @@ header {
     display: inline-block;
 }
 
-.header-name, /*nav.nav-overlay*/ {
+.header-name, .nav-button {
     width: 50%;
     height: 100%;
     display: inline-block;
     margin: 0;
 }
 
-/* nav.nav-overlay {
-    border: none;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-} */
 
-.header-name h1 {
+.header-name h1, .nav-button {
     position: absolute;
-    letter-spacing: 10px;
-    color: #fff;
-    opacity: .7;
     text-align: center;
     width: 50%;
     height: 100%;
-    font-weight: 400;
-    font-size: 25px;
     display: inline-block;
     margin: 0;
     padding-top: 40px;
+}
+
+.header-name h1 {
+    letter-spacing: 10px;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+}
+
+.header-name h1:hover {
+    cursor: default;
+    color: #c1b0e9;
+}
+
+.nav-button {
+    float: right;
+    padding: 0;
+}
+
+.hamburger {
+    padding: 14px 10px 10px 10px;
+    border: 2px solid #c1b0e9;
+    margin-top: 4px;
+}
+
+.hamburger:hover {
+    background: -moz-linear-gradient(top, rgba(96,81,138,0.67) 0%, rgba(147,131,188,0.67) 53%, rgba(193,176,233,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(96,81,138,0.67) 0%,rgba(147,131,188,0.67) 53%,rgba(193,176,233,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(96,81,138,0.67) 0%,rgba(147,131,188,0.67) 53%,rgba(193,176,233,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab60518a', endColorstr='#c1b0e9',GradientType=0 ); /* IE6-9 */
+}
+
+.nav-button p {
+    opacity: .5;
+    color: #c1b0e9;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.header-name, span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after, .nav-overlay a {
+    opacity: .85;
+    color: #fff;
+}
+
+span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after {
+    background-color: #fff;
 }
 
 /* =================================================
@@ -69,7 +103,8 @@ header {
     left: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
-    transition: 0.5s;
+    transition: .8s;
+    overflow-x: hidden;
 }
 
 .nav-content {
@@ -84,7 +119,6 @@ header {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
     display: block;
     transition: 0.3s;
 }
@@ -109,26 +143,27 @@ header {
     width: auto;
     height: auto;
     z-index: -9999;
+    filter: brightness(1.8);
 }
 
 #video-overlay {
     z-index: -9998;
-    background: -moz-linear-gradient(top, rgba(50,0,56,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(50,0,56,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(50,0,56,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, rgba(0,192,206,0.65) 0%, rgba(255,255,255,0.29) 55%, rgba(127,0,127,0.09) 86%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,192,206,0.65) 0%,rgba(255,255,255,0.29) 55%,rgba(127,0,127,0.09) 86%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,192,206,0.65) 0%,rgba(255,255,255,0.29) 55%,rgba(127,0,127,0.09) 86%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 #home-logo {
     position: absolute;
     width: 100%;
     height: 100%;
-}
-
-.home-logo-image {
-   z-index: 5;
-   transform: scale(0.8);
-   margin-left: 110px;
-   margin-top: 150px;
+    background-image: url(../img/logo/poly-owl-logo7.png);
+    z-index: -9997;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(.7);
+    top: 10%;
+    right: 3%;
 }
 
 /* =================================================
