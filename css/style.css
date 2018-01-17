@@ -38,6 +38,14 @@ header {
     margin: 0;
 }
 
+.header-name {
+    background-image: url(../img/acute-gradient.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+}
+
 .header-name h1, .nav-button {
     position: absolute;
     text-align: center;
@@ -53,11 +61,11 @@ header {
     font-weight: 400;
     font-size: 25px;
     margin: 0;
+    padding-right: 180px;
 }
 
 .header-name h1:hover {
     cursor: default;
-    color: #c1b0e9;
 }
 
 .nav-button {
@@ -94,7 +102,7 @@ header {
 }
 
 .header-name, span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after, .nav-overlay a {
-    opacity: .85;
+    opacity: .9;
     color: #fff;
 }
 
