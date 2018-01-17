@@ -18,11 +18,17 @@ $hamburger.on("click", function (e) {
     $hamburger.toggleClass("is-active");  
 });
 
-// open menu
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+// open/close menu
+function toggleNav() {
+   var x = document.getElementById("myNav");
+   if (x.style.width === "0%") {
+        x.style.width = "100%";
+    }
+    else if (x.style.width === "100%") {
+    x.style.width = "0%";
+    } else {
+       x.style.width = "100%";
+   }
 }
-// close menu
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
+
+
