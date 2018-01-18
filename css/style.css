@@ -71,6 +71,8 @@ header {
 .nav-button {
     float: right;
     padding: 0;
+    padding-left: 180px;
+    
 }
 
 .hamburger {
@@ -118,30 +120,13 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: -1;
     top: 0;
-    left: 0;
     background-color: #1c1c1c;
     transition: .5s;
     overflow-x: hidden;
-}
-
-.nav-content {
-    position: relative;
-    top: 20%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    letter-spacing: 3px;
-}
-
-.nav-overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    display: block;
-    transition: 0.3s;
-    margin-bottom: 40px;
+    padding-top: 170px;
+    font-size: 16px;
 }
 
 .menu-social {
@@ -149,14 +134,15 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     display: flex;
     justify-content: center;
     margin: 0;
-    position: relative;
-    top: 15vw;
+    margin-top: 80px;
+    letter-spacing: 10px;
 }
 
 .menu-social li a {
     font-size: 16px;
     letter-spacing: 4px;
     font-weight: 400;
+    opacity: .8;
 }
 
 .menu-social li a:hover {
