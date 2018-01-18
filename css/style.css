@@ -64,7 +64,7 @@ header {
     padding-right: 180px;
 }
 
-.header-name h1:hover {
+.header-name h1:hover, p:hover {
     cursor: default;
 }
 
@@ -315,4 +315,34 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
         margin-top: 20px;
         opacity: 0;
     }
+}
+
+/* =================================================
+-            P A G E - I N D I C A T O R
+==================================================== */
+
+.page-indicator {
+    position: fixed;
+    z-index: 999999999999;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    height: auto;
+    right: 70px;
+    top: 50%;
+    margin-top: -80px;
+}
+
+.page-indicator ul {
+    list-style: none;
+    font-size: 20px;
+    opacity: .5;
+}
+
+li.bar {
+    background-color: #fff;
+    height: 60px;
+    width: 2px;
+    line-height: 1;
+    margin: 2px 0 3px 0;
 }

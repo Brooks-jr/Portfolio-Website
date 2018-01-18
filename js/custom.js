@@ -8,13 +8,19 @@ $(function () {
 
 // video playback rate
 $(function () {
-    document.getElementById('cover-video').playbackRate = 4;
+    document.getElementById('cover-video').playbackRate = 5;
 });
 
 // hamburger
 var $hamburger = $(".hamburger");
 
 $hamburger.on("click", function (e) {
+    $hamburger.toggleClass("is-active");  
+});
+// menu link
+var $menuLink = $(".menu__item-name");
+
+$menuLink.on("click", function (e) {
     $hamburger.toggleClass("is-active");  
 });
 

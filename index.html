@@ -48,21 +48,8 @@
 
 
     <body>
-<!-- =================================================
--                       M E N U 
-====================================================-->
-      
-            <div id="fullpage" class="fullpage-wrapper"> <!-- FULLPAGE START -->
 
-                
-
-<!-- =================================================
--                       H O M E 
-====================================================-->
-        
-            <div class="section active" id="home" data-anchor="home-section">
-                <!-- HEADER -->
-                <header>
+     <header>
 
                     <div class="header-name">
                         <h1>BROOKS<br>JR.</h1>
@@ -86,19 +73,19 @@
 
                         <div class="nav-content menu menu--inola">
                             <a class="menu__item" href="#home-section">
-                                <span class="menu__item-name">.Home</span>
+                                <span class="menu__item-name " onclick="toggleNav()">.Home</span>
                                 <span class="menu__item-label">Soar with the owl</span>
                             </a>
                             <a class="menu__item" href="#work-section">
-                                <span class="menu__item-name">.Work</span>
+                                <span class="menu__item-name" onclick="toggleNav()">.Work</span>
                                 <span class="menu__item-label">Peck at my projects</span>
                             </a>
                             <a class="menu__item" href="#about-section">
-                                <span class="menu__item-name">.About Me</span>
+                                <span class="menu__item-name" onclick="toggleNav()">.About Me</span>
                                 <span class="menu__item-label">Owl behind the computer</span>
                             </a>
                             <a class="menu__item" href="#social-section">
-                                <span class="menu__item-name">.Social</span>
+                                <span class="menu__item-name" onclick="toggleNav()">.Social</span>
                                 <span class="menu__item-label">Feathers in the web</span>
                             </a>
                         </div>
@@ -115,6 +102,33 @@
                     </nav>
 
                 </header> 
+<!-- =================================================
+-                       M E N U 
+====================================================-->
+      
+            <div id="fullpage" class="fullpage-wrapper"> <!-- FULLPAGE START -->
+
+                <div class="page-indicator">
+                        <ul>
+                            <li class="bar">
+                            </li>
+                            <li class="bar">
+                            </li>
+                            <li class="bar">
+                            </li>
+                            <li class="bar">
+                            </li>
+                        </ul>
+                    </div>
+                
+
+<!-- =================================================
+-                       H O M E 
+====================================================-->
+        
+            <div class="section active" id="home" data-anchor="home-section">
+                <!-- HEADER -->
+               
 
                 <!-- LOGO -->
                 <div id="home-logo">
