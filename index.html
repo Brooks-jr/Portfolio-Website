@@ -47,96 +47,98 @@
 
 
 
-    <body>
-
-     <header>
-
-                    <div class="header-name">
-                        <h1>BROOKS<br>JR.</h1>
-                    </div>
-
-                    <!-- menu button | open-->
-
-                    <div class="nav-button"> 
-                        <p>.MENU</p> 
-                        <button class="hamburger hamburger--spin open .hvr-shutter-in-vertical" type="button" onclick="toggleNav()">
-                            
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
-                   
-
-                    <!-- menu content-->
-                    <nav id="myNav"class="nav-overlay content">
-
-                        <div class="nav-content menu menu--inola">
-                            <a class="menu__item" href="#home-section">
-                                <span class="menu__item-name " onclick="toggleNav()">.Home</span>
-                                <span class="menu__item-label">Soar with the owl</span>
-                            </a>
-                            <a class="menu__item" href="#work-section">
-                                <span class="menu__item-name" onclick="toggleNav()">.Work</span>
-                                <span class="menu__item-label">Peck at my projects</span>
-                            </a>
-                            <a class="menu__item" href="#about-section">
-                                <span class="menu__item-name" onclick="toggleNav()">.About Me</span>
-                                <span class="menu__item-label">Owl behind the computer</span>
-                            </a>
-                            <a class="menu__item" href="#social-section">
-                                <span class="menu__item-name" onclick="toggleNav()">.Social</span>
-                                <span class="menu__item-label">Feathers in the web</span>
-                            </a>
-                        </div>
-
-                        <!-- bottom socials -->
-                        <ul class="menu-social">
-                            <li class="ms-link"><a href="https://github.com/Brooks-jr">.GitHub</a></li> + 
-                            <li class="ms-link"><a href="https://www.linkedin.com/in/jefferybrooksjr/">.Linkedin</a></li>  + 
-                            <li class="ms-link"><a href="https://www.behance.net/Mr_Brooks">.Behance</a></li>  + 
-                            <li class="ms-link"><a href="https://twitter.com/J_BrooksJr">.Twitter</a></li>  + 
-                            <li class="ms-link"><a href="#"><span>jeffery.brooksjr@gmail.com</span></a></li>
-                        </ul>
-
-                    </nav>
-
-                </header> 
+    <body data-spy="scroll" data-target=".page-indicator">
 <!-- =================================================
--                       M E N U 
+-                H E A D E R / M E N U
 ====================================================-->
-      
-            <div id="fullpage" class="fullpage-wrapper"> <!-- FULLPAGE START -->
+        <header>
 
+            <div class="header-name">
+                <h1>BROOKS<br>JR.</h1>
+            </div>
+
+            <!-- hamburger-->
+            <div class="nav-button"> 
+                <p>.MENU</p> 
+                <button class="hamburger hamburger--spin open .hvr-shutter-in-vertical" type="button" onclick="toggleNav()">
+                    
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+            
+            <!-- menu content-->
+            <nav id="myNav"class="nav-overlay content">
+                <div class="nav-content menu menu--inola">
+                    <a class="menu__item" href="#home-section">
+                        <span class="menu__item-name" onclick="toggleNav()">.Home</span>
+                        <span class="menu__item-label">Soar with the owl</span>
+                    </a>
+                    <a class="menu__item" href="#work-section">
+                        <span class="menu__item-name" onclick="toggleNav()">.Work</span>
+                        <span class="menu__item-label">Peck at my projects</span>
+                    </a>
+                    <a class="menu__item" href="#about-section">
+                        <span class="menu__item-name" onclick="toggleNav()">.About Me</span>
+                        <span class="menu__item-label">Owl behind the computer</span>
+                    </a>
+                    <a class="menu__item" href="#social-section">
+                        <span class="menu__item-name" onclick="toggleNav()">.Social</span>
+                        <span class="menu__item-label">Feathers in the web</span>
+                    </a>
+                </div>
+
+                <!-- menu socials -->
+                <ul class="menu-social">
+                    <li class="ms-link"><a href="https://github.com/Brooks-jr">.GitHub</a></li> + 
+                    <li class="ms-link"><a href="https://www.linkedin.com/in/jefferybrooksjr/">.Linkedin</a></li>  + 
+                    <li class="ms-link"><a href="https://www.behance.net/Mr_Brooks">.Behance</a></li>  + 
+                    <li class="ms-link"><a href="https://twitter.com/J_BrooksJr">.Twitter</a></li>  + 
+                    <li class="ms-link"><a href="#"><span>jeffery.brooksjr@gmail.com</span></a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+<!-- =================================================
+-              P A G E - I N D I C A T O R 
+====================================================-->          
                 <div class="page-indicator">
-                        <ul>
-                            <li class="bar">
-                            </li>
-                            <li class="bar">
-                            </li>
-                            <li class="bar">
-                            </li>
-                            <li class="bar">
-                            </li>
-                        </ul>
-                    </div>
-                
+                    <ul>
+                        <li class="bar active">
+                            <a href="#home-section"></a>
+                        </li>
+                        <li class="bar">
+                            <a href="#work-section"></a>
+                        </li>
+                        <li class="bar">
+                            <a href="#about-section"></a>
+                        </li>
+                        <li class="bar">
+                            <a href="#social-section"></a>
+                        </li>
+                    </ul>
+                </div>
+
+<!-- ============================================== -->
+
+
+
+        <div id="fullpage" class="fullpage-wrapper"> <!-- FULLPAGE START -->
+
 
 <!-- =================================================
 -                       H O M E 
 ====================================================-->
         
             <div class="section active" id="home" data-anchor="home-section">
-                <!-- HEADER -->
-               
-
+ 
                 <!-- LOGO -->
-                <div id="home-logo">
-                </div>
+                <div id="home-logo"></div>
 
                 <!-- VIDEO -->
                 <div id="video-overlay"></div>
-
                 <video id="cover-video" data-autoplay data-keepplaying loop>
                     <source data-src="video/background.mp4" type="video/mp4">
                 </video>
@@ -147,8 +149,6 @@
                     <div class="mouse-icon">
                         <span class="mouse-wheel"></span>
                     </div>
-                    
-
                 </div>
                 
             </div>
@@ -175,7 +175,10 @@
 ====================================================-->
 
             <div class="section" id="social" data-anchor="social-section">
-                <h1>SOCIAL SECTION</h1>
+                <!-- back to top -->
+                <div class="back-to-top">
+                    <p>back to top</p>
+                </div>
             </div>
 
         

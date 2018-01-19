@@ -177,7 +177,6 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     height: auto;
     z-index: -9999;
     filter: brightness(1.8);
-    filter: blur(1px);
     object-fit: cover;
 }
 
@@ -225,9 +224,26 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 ==================================================== */
 
 #social {
-    background-color: gold;
+    background-image: url(../img/bg-social.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale()
 }
 
+#social:after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    background: rgba(7, 0, 7, 0.85);
+}
+
+.back-to-top {
+    color: #fff;
+}
 /* =================================================
 -            S C R O L L - I N D I C A T O R
 ==================================================== */
@@ -336,7 +352,7 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 .page-indicator ul {
     list-style: none;
     font-size: 20px;
-    opacity: .5;
+    
 }
 
 li.bar {
@@ -344,5 +360,11 @@ li.bar {
     height: 60px;
     width: 2px;
     line-height: 1;
-    margin: 2px 0 3px 0;
+    margin: 2px 0 5px 0;
+    opacity: .5;
+}
+
+li.bar.active {
+    height: 120px;
+    opacity: 1;
 }
