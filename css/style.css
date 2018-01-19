@@ -16,6 +16,10 @@ button:focus {
     outline: none;
 }
 
+a, a:hover, a:active, a:link, a:visited {
+    text-decoration: none;
+}
+
 /* =================================================
 -                     H E A D E R 
 ==================================================== */
@@ -224,11 +228,10 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 ==================================================== */
 
 #social {
-    background-image: url(../img/bg-social.gif);
+    background-image: url(../img/bg-social-bw.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale()
 }
 
 #social:after {
@@ -238,11 +241,58 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     height: inherit;
     top: 0;
     left: 0;
-    background: rgba(7, 0, 7, 0.85);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 53%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%);
+    z-index: 0;
+}
+
+.social-icons {
+    filter: grayscale(55%);
+    position: absolute;
+    z-index: 99;
+    top: 35%;
+    left: 2%;
+}
+
+.social-icons a {
+    display: inline-block;
+    padding-left: 100px;
+    text-align: center;
+}
+
+.social-icons a h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 6px;
+    font-size: 18px;
+}
+
+.social-icons a h4:hover {
+    color: #c1b0e9;
 }
 
 .back-to-top {
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    top: 88%;
+    display: inline-block;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.back-to-top a p {
     color: #fff;
+    opacity: .6;
+}
+
+.back-to-top a p:hover{
+    color: #c1b0e9;
+    opacity: 1;
 }
 /* =================================================
 -            S C R O L L - I N D I C A T O R
