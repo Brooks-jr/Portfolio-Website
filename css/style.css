@@ -20,6 +20,10 @@ a, a:hover, a:active, a:link, a:visited {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    cursor: default;
+}
+
 /* =================================================
 -                     H E A D E R 
 ==================================================== */
@@ -83,7 +87,7 @@ header {
 .hamburger {
     padding: 11px 7px 7px 7px;
     border: 1.4px solid #c1b0e9;
-    margin-top: 4px;
+    margin-top: 20px;
     position: absolute;
     z-index: 999999999999;
 }
@@ -108,7 +112,7 @@ header {
 }
 
 .header-name, span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after, .nav-overlay a {
-    opacity: .9;
+    opacity: .8;
     color: #fff;
 }
 
@@ -163,6 +167,36 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 /* =================================================
 -                     H O M E 
 ==================================================== */
+
+.side-info {
+    position: absolute;
+    top: -6vh;
+    margin: 6vh;
+    width: 100vh;
+    transform-origin: top left;
+    transform: rotate(-90deg) translate3d(-105.5%,0,0);
+    color: #fff;
+    list-style: none;
+    letter-spacing: 1px;
+    opacity: .8;
+    font-size: 14px;
+}
+
+.info-left {
+    position: absolute;
+    left: 6.5vh;
+}
+
+.info-mid {
+    text-align: center;
+    bottom: 0;
+}
+
+.info-right {
+    position: absolute;
+    top: 0;
+    right: 6.5vh;
+}
 
 #home .fp-tableCell {
     display: block;
@@ -226,20 +260,37 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 }
 
 article {
-    width: 40%;
-    height: 80%;
-    border-bottom: 5px solid #c1b0e9;
-    padding: 90px 30px 0px 30px;
-    text-align: center;
-    justify-content: center;
+    position: absolute;
+    padding: 0px 30px 30px 30px;
+    text-align: left;
+    display: block;
+    width: 100%;
+    z-index: 9;
+    bottom: 0;
 }
 
-article h1 {
-    font-weight: 700;
-    line-height: 50px;
-    text-transform: uppercase;
+.me .quote {
+    position: absolute;
+    font-weight: 400;
+    line-height: 40px;
     font-size: 22px;
     color: #c1b0e9;
+    padding: 0 100px;
+    margin: 0;
+    opacity: 1;
+    letter-spacing: 2px;
+    z-index: 9999999999;
+}
+
+.about-text-wrap-r, .about-text-wrap-l {
+    float: left;
+    width: 40%;
+    padding-top: 40px;
+}
+
+.about-text-wrap-l {
+    margin-left: 120px;
+    letter-spacing: 1px;
 }
 
 article h1 span {
@@ -247,19 +298,24 @@ article h1 span {
     color: #645e72;
 }
 
-article p, article p span {
-    color: #645e72;
-    font-size: 18px;
+article p, article p span, .name span {
+    color: #877e9c;
+    font-size: 15px;
 }
 
 article p span {
     color: #c1b0e9;
 }
 
-article h3 {
+article .name {
     color: #c1b0e9;
-    font-size: 20px;
+    font-size: 40px;
     margin:0 0 20px 0;
+    border-bottom: 1px solid #645e72;
+}
+
+.name span {
+    font-size: 28px;
 }
 
 .playlist {
@@ -300,26 +356,9 @@ article h3 {
     color: #645e72;
 }
 
-.podcast {
-    height: 50%;
-    background-image: url(../img/playlist/fatman-on-batman.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.podcast h4 {
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    font-weight: 400;
-    color: #645e72;
-    top: 50%;
-    left: 50%;
-}
-
 .playlist a img {
     width: 104px;
+    max-width: 114px;
     height: 104px;
     border: 1px solid;
     padding: 1px;
@@ -344,14 +383,35 @@ article h3 {
     color: #fff;
 }
 
+.podcast ul li a img {
+    width: 150px;
+    height: 180px;
+    max-width: 170px;
+}
+
+.podcast ul {
+    width: 100%;
+}
+
+.podcast {
+    bottom: 0;
+}
+
 .me {
     position: absolute;
-    background-image: url(../img/bg-about6.jpg);
+    background-image: url(../img/bg-about7.jpeg);
     width: 62%;
     height: 100%;
     background-size: 100% 100%;
     left: 0;
     top: 0;
+    padding-top: 100px;
+    filter: brightness(1.4);
+}
+
+.me img {
+    width: 400px;
+    height: 200px;
 }
 
 .me:after {
@@ -362,8 +422,7 @@ article h3 {
     top: 0;
     left: 0;
     /* background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 53%,rgba(0,0,0,1) 99%,rgba(0,0,0,1) 100%); */
-    /* background: rgba(9, 4, 14, 0.72); */
-    filter: brightness(2);
+    background: rgba(9, 4, 14, .85);
     z-index: 0;
 }
 
@@ -437,12 +496,12 @@ article h3 {
     font-weight: 400;
 }
 
-.back-to-top a p {
+.back-to-top figure{
     color: #fff;
     opacity: .6;
 }
 
-.back-to-top a p:hover{
+.back-to-top figure:hover{
     color: #c1b0e9;
     opacity: 1;
 }
@@ -539,7 +598,11 @@ article h3 {
 -            P A G E - I N D I C A T O R
 ==================================================== */
 
-.page-indicator {
+#fp-nav ul li a span {
+    background: #fff;
+}
+
+/* .page-indicator {
     position: fixed;
     z-index: 999999999999;
     color: #fff;
@@ -569,13 +632,13 @@ li.bar {
 li.bar.active {
     height: 120px;
     opacity: 1;
-}
+} */
 
 /* =================================================
 -            B G - I M A G E S
 ==================================================== */
 
-#social, .me, article {
+#social, .me, #work {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
