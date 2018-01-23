@@ -3,7 +3,10 @@ $(function () {
     $('#fullpage').fullpage({
         anchors: ['home-section', 'work-section', 'about-section', 'social-section'],
         responsiveSlides: true,
-        navigation: true
+        navigation: true,
+        slidesNavigation: true,
+        easing: 'easeInOutCubic',
+		easingcss3: 'ease'
     });
 });
 

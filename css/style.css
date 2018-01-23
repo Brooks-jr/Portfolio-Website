@@ -262,6 +262,33 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     background-image: url(../img/bg-work.jpg);
 }
 
+.fp-slidesNav.bottom {
+    padding-left: 50%;
+}
+
+.fp-slidesNav.bottom ul span {
+    background: #fff;
+}
+
+.fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+    opacity: .3;
+}
+
+.fp-controlArrow.fp-next:hover, .fp-controlArrow.fp-prev:hover {
+    opacity: 1;
+}
+
+.fp-controlArrow.fp-next {
+    right: 10%;
+    border-color: transparent transparent transparent #c1b0e9;
+    
+}
+
+.fp-controlArrow.fp-prev {
+    left: 10%;
+    border-color: transparent #c1b0e9 transparent transparent;
+}
+
 /* =================================================
 -                     A B O U T 
 ==================================================== */
@@ -283,6 +310,10 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     font-size: 20px;
     color: #fff;
     margin-bottom: 80px;
+}
+
+.about-text-wrap-l p {
+    margin-bottom: 30px;
 }
 
 .about-text-wrap-r {
@@ -372,11 +403,6 @@ article {
     text-align: left;
     display: inline-block;
     z-index: 9;
-}
-
-article h1 span {
-    text-transform: none;
-    color: #645e72;
 }
 
 article p, article p span, .name span {
@@ -477,7 +503,6 @@ article .name {
 }
 
 .podcast {
-    bottom: 0;
 }
 
 /* =================================================
