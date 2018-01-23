@@ -304,6 +304,7 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     position: relative;
     letter-spacing: 1px;
     display: inline-block;
+    padding-top: 100px;
 }
 
 .about-text-wrap-l h3 {
@@ -334,6 +335,10 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 .about-text-wrap-r ul li {
     margin-bottom: 30px;
     border-bottom: .5px solid #3a3a43;
+}
+
+.about-text-wrap-r, .about-text-wrap-l {
+    top: 20%;
 }
 
 .me .quote {
@@ -419,8 +424,10 @@ article .name {
     font-size: 26px;
     margin:0 0 20px 0;
     border-bottom: 1px solid #645e72;
-    width: 35%;
+    width: 33%;
     padding-bottom: 20px;
+    left: 10%;
+    position: absolute;
 }
 
 .name span {
