@@ -6,7 +6,9 @@ $(function () {
         navigation: true,
         slidesNavigation: true,
         easing: 'easeInOutCubic',
-		easingcss3: 'ease'
+        easingcss3: 'ease',
+        loopHorizontal: true,
+        continuousHorizontal: true
     });
 });
 

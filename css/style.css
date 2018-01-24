@@ -260,6 +260,7 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 
 #work {
     background-image: url(../img/bg-work.jpg);
+    padding: 110px 90px 55px 80px;
 }
 
 .fp-slidesNav.bottom {
@@ -280,13 +281,25 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 
 .fp-controlArrow.fp-next {
     right: 10%;
-    border-color: transparent transparent transparent #c1b0e9;
+    border-color: transparent transparent transparent #fff;
     
 }
 
 .fp-controlArrow.fp-prev {
     left: 10%;
-    border-color: transparent #c1b0e9 transparent transparent;
+    border-color: transparent #fff transparent transparent;
+}
+
+.slide-1 {
+    background-image: url(../img/work/bg-work1.jpg);
+}
+
+.slide-2 {
+    background-image: url(../img/work/bg-work2.jpg);
+}
+
+.slide-3 {
+    background-image: url(../img/work/bg-work3.jpg);
 }
 
 /* =================================================
@@ -733,7 +746,7 @@ li.bar.active {
 -            B G - I M A G E S
 ==================================================== */
 
-#social, .me, #work {
+#social, .me, #work, .slide {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
