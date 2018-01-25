@@ -130,7 +130,7 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 ==================================================== */
 
 #myNav {
-    padding-top: 13%;
+    padding-top: 12.5%;
 }
 .nav-overlay {
     height: 100%;
@@ -282,7 +282,6 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 .fp-controlArrow.fp-next {
     right: 10%;
     border-color: transparent transparent transparent #fff;
-    
 }
 
 .fp-controlArrow.fp-prev {
@@ -300,6 +299,52 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 
 .slide-3 {
     background-image: url(../img/work/bg-work3.jpg);
+}
+
+.project-desc {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+   
+}
+
+.project-desc h2 {
+    color: #fff;
+}
+
+.project-desc h4 {
+    color: #ababab;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.desc-1 {
+    top: 0;
+    padding-left: 20px;
+    background-color: #363543;
+}
+
+.desc-2 {
+    background-color: #292933;
+    bottom: 0;
+    padding-left: 20px;
+}
+
+.desc-3 {
+    background-color: #464557;
+    top: 0;
+    right: 0;
+    padding-left: 20px;
+}
+
+.view-project {
+    letter-spacing: 5px;
+    padding: 10px;
+    width: 90%;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 700;
 }
 
 /* =================================================
