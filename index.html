@@ -73,29 +73,29 @@
             <nav id="myNav"class="nav-overlay content">
                 <div class="nav-content menu menu--inola">
                     <a class="menu__item" href="#home-section">
-                        01<span class="menu__item-name" onclick="toggleNav()">.Home</span>
+                        01 <span class="menu__item-name" onclick="toggleNav()">.Home</span>
                         <span class="menu__item-label">Soar with the owl</span>
                     </a>
                     <a class="menu__item" href="#work-section">
-                        02<span class="menu__item-name" onclick="toggleNav()">.Work</span>
+                        02 <span class="menu__item-name" onclick="toggleNav()">.Work</span>
                         <span class="menu__item-label">Peck at my projects</span>
                     </a>
                     <a class="menu__item" href="#about-section">
-                        03<span class="menu__item-name" onclick="toggleNav()">.About Me</span>
+                        03 <span class="menu__item-name" onclick="toggleNav()">.About Me</span>
                         <span class="menu__item-label">Owl behind the computer</span>
                     </a>
                     <a class="menu__item" href="#social-section">
-                        04<span class="menu__item-name" onclick="toggleNav()">.Social</span>
+                        04 <span class="menu__item-name" onclick="toggleNav()">.Social</span>
                         <span class="menu__item-label">Feathers in the web</span>
                     </a>
                 </div>
 
                 <!-- menu socials -->
                 <ul class="menu-social">
-                    <li class="ms-link"><a href="https://github.com/Brooks-jr">.GitHub</a></li> + 
-                    <li class="ms-link"><a href="https://www.linkedin.com/in/jefferybrooksjr/">.Linkedin</a></li>  + 
-                    <li class="ms-link"><a href="https://www.behance.net/Mr_Brooks">.Behance</a></li>  + 
-                    <li class="ms-link"><a href="https://twitter.com/J_BrooksJr">.Twitter</a></li>  + 
+                    <li class="ms-link"><a href="https://github.com/Brooks-jr">.GitHub</a></li>
+                    <li class="ms-link"><a href="https://www.linkedin.com/in/jefferybrooksjr/">.Linkedin</a></li>
+                    <li class="ms-link"><a href="https://www.behance.net/Mr_Brooks">.Behance</a></li>
+                    <li class="ms-link"><a href="https://twitter.com/J_BrooksJr">.Twitter</a></li>
                     <li class="ms-link"><a href="#"><span>jeffery.brooksjr@gmail.com</span></a></li>
                 </ul>
             </nav>
@@ -105,29 +105,22 @@
 <!-- =================================================
 -              P R O J E C T - S L I D E S 
 ====================================================-->
-        <div class="project-case vesco"></div>
-        <div class="project-case portfolio"></div>
-        <div class="project-case illustrations"></div>
-
-<!-- =================================================
--              P A G E - I N D I C A T O R 
-====================================================-->          
-                <!-- <div class="page-indicator wow slideInRight data-wow-duration='1s' data-wow-delay='.5s'">
-                    <ul>
-                        <li class="bar active">
-                            <a href="#home-section"></a>
-                        </li>
-                        <li class="bar">
-                            <a href="#work-section"></a>
-                        </li>
-                        <li class="bar">
-                            <a href="#about-section"></a>
-                        </li>
-                        <li class="bar">
-                            <a href="#social-section"></a>
-                        </li>
-                    </ul>
-                </div> -->
+        <!-- vesco -->
+        <div class="project-case" id="vescoSlide">
+            <hr><button class="close-slide hvr-backward" type="button" onclick="toggleVescoSlide()">- Slide Back</button>
+            <div class="intro-wrapper">
+                <div class="intro-left"></div>
+                <div class="intro-right"></div>
+            </div>
+        </div>
+        <!-- portfolio -->
+        <div class="project-case" id="portfolioSlide">
+            <button class="close-slide" type="button" onclick="togglePortfolioSlide()">- Slide Back</button>
+        </div>
+        <!-- illustration -->
+        <div class="project-case" id="illustrationSlide">
+            <button class="close-slide" type="button" onclick="toggleIllustrationSlide()">- Slide Back</button>
+        </div>   
 
 <!-- ============================================== -->
 
@@ -176,7 +169,7 @@
                     <div class="project-desc desc-1">
                         <h2>.Vesco</h2>
                         <h4>- A Modern And Fully Responsive Single Page Website Designed For Companies.</h4>
-                        <button class="view-project hvr-sweep-to-bottom">
+                        <button class="view-project hvr-sweep-to-bottom" type="button" onclick="toggleVescoSlide()">
                             VIEW CASE
                         </button>
                     </div>
@@ -187,7 +180,7 @@
                     <div class="project-desc desc-2">
                         <h2>.Brooks Jr + Portfolio</h2>
                         <h4>- Personal Portfolio Website. Allowed Me To Experiment With Layout And Functionality.</h4>
-                        <button class="view-project hvr-sweep-to-top">
+                        <button class="view-project hvr-sweep-to-top" type="button" onclick="togglePortfolioSlide()">
                             VIEW CASE
                         </button>
                     </div>
@@ -198,7 +191,7 @@
                     <div class="project-desc desc-3">
                         <h2>.Illustrations</h2>
                         <h4>- Illustrations I've Conjured Featuring The Likes Of Logos And Custom Web Icons.</h4>
-                        <button class="view-project hvr-sweep-to-bottom">
+                        <button class="view-project hvr-sweep-to-bottom" type="button" onclick="toggleIllustrationSlide()">
                             VIEW CASE
                         </button>
                     </div>
