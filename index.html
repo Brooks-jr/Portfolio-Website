@@ -1,427 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <!-- Meta Tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <!-- SEO Tags -->
-        <meta name="description" content="Modern responsive website utilizing HTML5, CSS3, JavaScript's jQuery & Bootstrap framwork">
-        <meta name="keywords" content="HTML5, CSS3, jQuery, Bootstrap, Web Design, Web Development, Responsive Website, Modern Website"> 
-        
-        <!-- Browser Tab's Title & Icon -->
-        <title>Brooks Jr. | Portfolio</title>
-        <link rel="shortcut icon" href="img/logo/favicon.ico">
+    <!-- SEO Tags -->
+    <meta name="description" content="Modern responsive website utilizing HTML5, CSS3, JavaScript's jQuery & Bootstrap framwork">
+    <meta name="keywords" content="HTML5, CSS3, jQuery, Bootstrap, Web Design, Web Development, Responsive Website, Modern Website">
 
-        <!-- GOOGLE FONTS -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- Browser Tab's Title & Icon -->
+    <title>Brooks Jr. | Portfolio</title>
+    <link rel="shortcut icon" href="img/logo/favicon.ico">
 
-        <!-- FONT-AWESOME -->
-        <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway:300,400,700" rel="stylesheet">
 
-        <!-- BOOTSTRAP CSS -->
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- FONT-AWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
-        <!-- ANIMATIONS -->
-        <link rel="stylesheet" href="css/animate/animate.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 
-        <!-- HOVER-MASTER -->
-        <link rel="stylesheet" href="css/hover-master/hover-min.css"  media="all">
+    <!-- ANIMATIONS -->
+    <link rel="stylesheet" href="css/animate/animate.css">
 
-        <!-- FULL-PAGE -->
-        <link rel="stylesheet" type="text/css" href="css/fullpage/jquery.fullPage.min.css">
+    <!-- HOVER-MASTER -->
+    <link rel="stylesheet" href="css/hover-master/hover-min.css" media="all">
 
-        <!-- HAMBURGERS -->
-        <link href="css/hamburgers/hamburgers.min.css" rel="stylesheet">
+    <!-- FULL-PAGE -->
+    <link rel="stylesheet" type="text/css" href="css/fullpage/jquery.fullPage.min.css">
 
-        <!-- INOLA -->
-        <link rel="stylesheet" href="css/inola/style-inola.css">
+    <!-- HAMBURGERS -->
+    <link href="css/hamburgers/hamburgers.min.css" rel="stylesheet">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+    <!-- INOLA -->
+    <link rel="stylesheet" href="css/inola/style-inola.css">
 
-    </head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
 
 
 
-    <body data-spy="scroll" data-target=".page-indicator">
+<body data-spy="scroll" data-target=".page-indicator">
 <!-- =================================================
 -                H E A D E R / M E N U
 ====================================================-->
-        <header class="wow slideInDown">
+    <header class="wow slideInDown">
 
-            <div class="header-name">
-                <h1>BROOKS<br>JR.</h1>
+        <div class="header-name">
+            <h1 class="megrim">BROOKS
+                <br>JR.</h1>
+        </div>
+
+        <!-- hamburger-->
+        <div class="nav-button">
+            <p>.Navigation</p>
+            <button class="hamburger hamburger--spin open hvr-sweep-to-top-hb" type="button" onclick="toggleNav()">
+
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+
+        <!-- menu content-->
+        <nav id="myNav" class="nav-overlay content">
+            <div class="nav-content menu menu--inola">
+                <a class="menu__item" href="#home-section">
+                    01
+                    <span class="menu__item-name megrim" onclick="toggleNav()">.Home</span>
+                    <span class="menu__item-label">Soar with the owl</span>
+                </a>
+                <a class="menu__item" href="#work-section">
+                    02
+                    <span class="menu__item-name megrim" onclick="toggleNav()">.Work</span>
+                    <span class="menu__item-label">Peck at my projects</span>
+                </a>
+                <a class="menu__item" href="#about-section">
+                    03
+                    <span class="menu__item-name megrim" onclick="toggleNav()">.About Me</span>
+                    <span class="menu__item-label">Owl behind the computer</span>
+                </a>
+                <a class="menu__item" href="#social-section">
+                    04
+                    <span class="menu__item-name megrim" onclick="toggleNav()">.Social</span>
+                    <span class="menu__item-label">Feathers in the web</span>
+                </a>
             </div>
 
-            <!-- hamburger-->
-            <div class="nav-button"> 
-                <p>.Navigation</p>
-                <button class="hamburger hamburger--spin open hvr-sweep-to-top-hb" type="button" onclick="toggleNav()">
-                    
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
-            
-            <!-- menu content-->
-            <nav id="myNav"class="nav-overlay content">
-                <div class="nav-content menu menu--inola">
-                    <a class="menu__item" href="#home-section">
-                        01 <span class="menu__item-name" onclick="toggleNav()">.Home</span>
-                        <span class="menu__item-label">Soar with the owl</span>
+            <!-- menu socials -->
+            <ul class="menu-social">
+                <li class="ms-link">
+                    <a href="https://github.com/Brooks-jr">.GitHub</a>
+                </li>
+                <li class="ms-link">
+                    <a href="https://www.linkedin.com/in/jefferybrooksjr/">.Linkedin</a>
+                </li>
+                <li class="ms-link">
+                    <a href="https://www.behance.net/Mr_Brooks">.Behance</a>
+                </li>
+                <li class="ms-link">
+                    <a href="https://twitter.com/J_BrooksJr">.Twitter</a>
+                </li>
+                <li class="ms-link">
+                    <a href="#">
+                        <span>jeffery.brooksjr@gmail.com</span>
                     </a>
-                    <a class="menu__item" href="#work-section">
-                        02 <span class="menu__item-name" onclick="toggleNav()">.Work</span>
-                        <span class="menu__item-label">Peck at my projects</span>
-                    </a>
-                    <a class="menu__item" href="#about-section">
-                        03 <span class="menu__item-name" onclick="toggleNav()">.About Me</span>
-                        <span class="menu__item-label">Owl behind the computer</span>
-                    </a>
-                    <a class="menu__item" href="#social-section">
-                        04 <span class="menu__item-name" onclick="toggleNav()">.Social</span>
-                        <span class="menu__item-label">Feathers in the web</span>
-                    </a>
-                </div>
+                </li>
+            </ul>
+        </nav>
 
-                <!-- menu socials -->
-                <ul class="menu-social">
-                    <li class="ms-link"><a href="https://github.com/Brooks-jr">.GitHub</a></li>
-                    <li class="ms-link"><a href="https://www.linkedin.com/in/jefferybrooksjr/">.Linkedin</a></li>
-                    <li class="ms-link"><a href="https://www.behance.net/Mr_Brooks">.Behance</a></li>
-                    <li class="ms-link"><a href="https://twitter.com/J_BrooksJr">.Twitter</a></li>
-                    <li class="ms-link"><a href="#"><span>jeffery.brooksjr@gmail.com</span></a></li>
-                </ul>
-            </nav>
-
-        </header>
+    </header>
 
 <!-- =================================================
 -              P R O J E C T - S L I D E S 
 ====================================================-->
-        <!-- vesco -->
-        <div class="project-case" id="vescoSlide">
-            <hr><button class="close-slide hvr-backward" type="button" onclick="toggleVescoSlide()">- Slide Back</button>
-            <div class="intro-wrapper">
-                <div class="intro-left"></div>
-                <div class="intro-right"></div>
+    <!-- vesco -->
+    <div class="project-case" id="vescoSlide">
+        <hr>
+        <button class="close-slide hvr-backward" type="button" onclick="toggleVescoSlide()">- Slide Back</button>
+        <div class="intro-wrapper">
+            <div class="intro-left"></div>
+            <div class="intro-right">
+                <div class="intro-right-text">
+                    <h1 class="megrim">.Modern & Responsive</h1>
+                    <p>A website built from scratch with modern trends in mind. Utilizing modern web development technologies
+                        like HTML5, CSS3, Bootstrap and some jQuery. With the use of Bootstrap's grid system, the site is
+                        built with a fully responsive layout. </p>
+                </div>
             </div>
         </div>
-        <!-- portfolio -->
-        <div class="project-case" id="portfolioSlide">
-            <button class="close-slide" type="button" onclick="togglePortfolioSlide()">- Slide Back</button>
+        <div class="mentions">
+
         </div>
-        <!-- illustration -->
-        <div class="project-case" id="illustrationSlide">
-            <button class="close-slide" type="button" onclick="toggleIllustrationSlide()">- Slide Back</button>
-        </div>   
+        div.
+    </div>
+    <!-- portfolio -->
+    <div class="project-case" id="portfolioSlide">
+        <button class="close-slide" type="button" onclick="togglePortfolioSlide()">- Slide Back</button>
+    </div>
+    <!-- illustration -->
+    <div class="project-case" id="illustrationSlide">
+        <button class="close-slide" type="button" onclick="toggleIllustrationSlide()">- Slide Back</button>
+    </div>
 
 <!-- ============================================== -->
 
 
-
-        <div id="fullpage" class="fullpage-wrapper"> <!-- FULLPAGE START -->
-
-
+<!-- FULLPAGE START -->
+    <div id="fullpage" class="fullpage-wrapper">
+        
 <!-- =================================================
 -                       H O M E 
 ====================================================-->
-        
-            <div class="section active" id="home" data-anchor="home-section">
-                
-                <ul class="side-info wow zoomIn data-wow-duration='1s' data-wow-delay='.5s'">
-                    <li class="info-left">WEB DEVELOPER + ILLUSTRATOR</li>
-                    <li class="info-mid">GREATER CHICAGO AREA</li>
-                    <li class="info-right">JEFFERY BROOKS JR</li>
-                </ul>
-                <!-- LOGO -->
-                <div id="home-logo" class=" wow zoomIn data-wow-duration='1s' data-wow-delay='.5s'"></div>
 
-                <!-- VIDEO -->
-                <div id="video-overlay"></div>
-                <video id="cover-video" data-autoplay data-keepplaying loop>
-                    <source data-src="video/background.mp4" type="video/mp4">
-                </video>
+        <div class="section active" id="home" data-anchor="home-section">
 
-                <!-- scroll indicator -->
-                <div class="mouse wow slideInUp data-wow-duration='1s' data-wow-delay='.5s'">
-                    <p>.SCROLL</p>
-                    <div class="mouse-icon">
-                        <span class="mouse-wheel"></span>
-                    </div>
+            <ul class="side-info wow zoomIn data-wow-duration='1s' data-wow-delay='.5s'">
+                <li class="info-left">WEB DEVELOPER + ILLUSTRATOR</li>
+                <li class="info-mid">GREATER CHICAGO AREA</li>
+                <li class="info-right">JEFFERY BROOKS JR</li>
+            </ul>
+            <!-- LOGO -->
+            <div id="home-logo" class=" wow zoomIn data-wow-duration='1s' data-wow-delay='.5s'"></div>
+
+            <!-- VIDEO -->
+            <div id="video-overlay"></div>
+            <video id="cover-video" data-autoplay data-keepplaying loop>
+                <source data-src="video/background.mp4" type="video/mp4">
+            </video>
+
+            <!-- scroll indicator -->
+            <div class="mouse wow slideInUp data-wow-duration='1s' data-wow-delay='.5s'">
+                <p>.SCROLL</p>
+                <div class="mouse-icon">
+                    <span class="mouse-wheel"></span>
                 </div>
-                
             </div>
+
+        </div>
 <!-- =================================================
 -                       W O R K
-====================================================-->           
+====================================================-->
 
-            <div class="section" id="work" data-anchor="work-section">
+        <div class="section" id="work" data-anchor="work-section">
 
-                <!-- first slide -->
-                <div class="slide slide-1" data-anchor="slide1">
-                    <div class="project-desc desc-1">
-                        <h2>.Vesco</h2>
-                        <h4>- A Modern And Fully Responsive Single Page Website Designed For Companies.</h4>
-                        <button class="view-project hvr-sweep-to-bottom" type="button" onclick="toggleVescoSlide()">
-                            VIEW CASE
-                        </button>
-                    </div>
+            <!-- first slide -->
+            <div class="slide slide-1" data-anchor="slide1">
+                <div class="project-desc desc-1">
+                    <h2 class="megrim">.Vesco</h2>
+                    <p>- A Modern And Fully Responsive Single Page Website Designed For Companies.</p>
+                    <button class="view-project hvr-sweep-to-bottom" type="button" onclick="toggleVescoSlide()">
+                        VIEW CASE
+                    </button>
                 </div>
-
-                <!-- second slide -->
-                <div class="slide slide-2" data-anchor="slide2">
-                    <div class="project-desc desc-2">
-                        <h2>.Brooks Jr + Portfolio</h2>
-                        <h4>- Personal Portfolio Website. Allowed Me To Experiment With Layout And Functionality.</h4>
-                        <button class="view-project hvr-sweep-to-top" type="button" onclick="togglePortfolioSlide()">
-                            VIEW CASE
-                        </button>
-                    </div>
-                </div>
-
-                <!-- third slide -->
-                <div class="slide slide-3" data-anchor="slide3">
-                    <div class="project-desc desc-3">
-                        <h2>.Illustrations</h2>
-                        <h4>- Illustrations I've Conjured Featuring The Likes Of Logos And Custom Web Icons.</h4>
-                        <button class="view-project hvr-sweep-to-bottom" type="button" onclick="toggleIllustrationSlide()">
-                            VIEW CASE
-                        </button>
-                    </div>
-                </div>
-
             </div>
+
+            <!-- second slide -->
+            <div class="slide slide-2" data-anchor="slide2">
+                <div class="project-desc desc-2">
+                    <h2 class="megrim">My Portfolio</h2>
+                    <p>- Personal Portfolio Website. Allowed Me To Experiment With Layout And Functionality.</p>
+                    <button class="view-project hvr-sweep-to-top" type="button" onclick="togglePortfolioSlide()">
+                        VIEW CASE
+                    </button>
+                </div>
+            </div>
+
+            <!-- third slide -->
+            <div class="slide slide-3" data-anchor="slide3">
+                <div class="project-desc desc-3">
+                    <h2 class="megrim">.Illustrations</h2>
+                    <p>- Illustrations I've Conjured Featuring The Likes Of Logos And Custom Web Icons.</p>
+                    <button class="view-project hvr-sweep-to-bottom" type="button" onclick="toggleIllustrationSlide()">
+                        VIEW CASE
+                    </button>
+                </div>
+            </div>
+
+        </div>
 
 <!-- =================================================
 -                     A B O U T
 ====================================================-->
 
-            <div class="section" id="about" data-anchor="about-section">
-                
-            
-                <div class="me">
-                    <!-- image -->
-                    <div class="image">
-                        <img src="img/me.png" alt="me and daftpunk">
-                    </div>
+        <div class="section" id="about" data-anchor="about-section">
 
-                    <!-- info -->
-                    <article>
-                        <h3 class="name">Jeffery M. Brooks Jr. <br><span>Web Developer | Graphic Illustrator</span></h3>
 
-                        <div class="about-text-wrap-r"> 
-                           <ul>
-                                languages<li><p>Python + C#.NET + MEAN</p></li>
-                                brushes<li><p>Adobe Illustrator + Photoshop</p></li>
-                                wand<li><p>Blackthorn Wood + Phoenix Feather Core</p></li>
-                            </ul>
-                        </div>
-                       
-                        <div class="about-text-wrap-l"> 
-                            <h3>Who the hell is this guy?</h3>
-                            <p>
-                                <span>I'm A Web Developer & Graphics Illustrator</span>, educated in full stack development with a passion for front-end/client-side development.
-                                Origin story begins in the <span>Greater Chicago Area</span>, where I attended <span>Columbia College Chicago</span> for interactive arts & media: Game Design. Later, attending <span>Coding Dojo </span> where I studied and graduated for full stack development. I'm excited to see where the journey into web developing leads me and eager to take on projects that both challenge and teach me.
-                            </p> 
-                            <p>
-                                If you are also infatuated with creative code & design and fly the banner of House Stark, lets create together. If you are interested in working with me, just power up the Bat-signal or email me at <span>jeffery.brooksjr@gmail.com</span>
-                            </p>
-                        </div>
-                       
-                    </article>
+            <div class="me">
+                <!-- image -->
+                <div class="image">
+                    <img src="img/me.png" alt="me and daftpunk">
                 </div>
 
-                <!-- playlist -->
-                <div class="playlist">
-                    <h3>Songs i like to code to </h3>
+                <!-- info -->
+                <article>
+                    <h3 class="name">Jeffery M. Brooks Jr.
+                        <br>
+                        <span>Web Developer | Graphic Illustrator</span>
+                    </h3>
 
-                    <!-- songs -->
-                    <div class="songs">
+                    <div class="about-text-wrap-r">
                         <ul>
-                            <li>  
-                                <a href="https://www.youtube.com/watch?v=IMn_R34hjRo&ab_channel=VariousArtists-Topic">
-                                    <figure>
-                                        <img src="img/playlist/bedroom.jpg" alt="bedroom" class="song-img hvr-grow">
-                                        <figcaption><h5>BEDROOM <br>- Litany</h5></figcaption> 
-                                    </figure>  
-                                </a>
-                            </li>
-                            
+                            languages
                             <li>
-                                <a href="https://www.youtube.com/watch?v=5Zdk0oYnyKs&ab_channel=BrawlBRSTMs3X">
-                                    <figure>
-                                        <img src="img/playlist/soulcalibur2.jpg" alt="soulcalibur" class="song-img hvr-grow">
-                                        <figcaption><h5>HISTORY UNFOLDS <br>- SoulCalibur II</h5></figcaption>
-                                    </figure>
-                                </a>
+                                <p>Python + C#.NET + MEAN</p>
                             </li>
-                            
+                            brushes
                             <li>
-                                <a href="https://www.youtube.com/watch?v=juWVhhK_iDw&t=59s&ab_channel=Patu">
-                                    <figure>
-                                        <img src="img/playlist/ambitions.jpg" alt="ambitions" class="song-img hvr-grow">
-                                        <figcaption><h5>AMBITIONS <br>- j a r j a r j r</h5></figcaption>
-                                    </figure>
-                                </a>
+                                <p>Adobe Illustrator + Photoshop</p>
                             </li>
-
+                            wand
                             <li>
-                                <a href="https://www.youtube.com/watch?v=yqcancyFBZU&ab_channel=BassIsAlive">
-                                    <figure>
-                                        <img src="img/playlist/post-malone.jpg" alt="post malone" class="song-img hvr-grow">
-                                        <figcaption><h5>UP THERE <br>- Post Malone</h5></figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=REyxoxScrbU&ab_channel=CalvinHarrisVEVO">
-                                    <figure>
-                                        <img src="img/playlist/hard-to-love.jpg" alt="jessie reyez" class="song-img hvr-grow">
-                                        <figcaption><h5>HARD TO LOVE <br>- Calvin ft. Jessie</h5></figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://www.youtube.com/watch?v=2vvs4__2XRI&ab_channel=CookieAdventures">
-                                    <figure>
-                                        <img src="img/playlist/intriguing-possibilities.jpg" alt="social network ost" class="song-img hvr-grow">
-                                        <figcaption><h5>INTRIGUING POSSIBILITIES <br>- The Social Network</h5></figcaption>
-                                    </figure>
-                                </a>
+                                <p>Blackthorn Wood + Phoenix Feather Core</p>
                             </li>
                         </ul>
                     </div>
+
+                    <div class="about-text-wrap-l">
+                        <h3>Who the hell is this guy?</h3>
+                        <p>
+                            <span>I'm A Web Developer & Graphics Illustrator</span>, educated in full stack development with a
+                            passion for front-end/client-side development. Origin story begins in the
+                            <span>Greater Chicago Area</span>, where I attended
+                            <span>Columbia College Chicago</span> for interactive arts & media: Game Design. Later, attending
+                            <span>Coding Dojo </span> where I studied and graduated for full stack development. I'm excited to
+                            see where the journey into web developing leads me and eager to take on projects that both challenge
+                            and teach me.
+                        </p>
+                        <p>
+                            If you are also infatuated with creative code & design and fly the banner of House Stark, lets create together. If you are
+                            interested in working with me, just power up the Bat-signal or email me at
+                            <span>jeffery.brooksjr@gmail.com</span>
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+
+            <!-- playlist -->
+            <div class="playlist">
+                <h3>Songs i like to code to </h3>
+
+                <!-- songs -->
+                <div class="songs">
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=IMn_R34hjRo&ab_channel=VariousArtists-Topic">
+                                <figure>
+                                    <img src="img/playlist/bedroom.jpg" alt="bedroom" class="song-img hvr-grow">
+                                    <figcaption>
+                                        <h6>BEDROOM
+                                            <br>- Litany</h6>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=5Zdk0oYnyKs&ab_channel=BrawlBRSTMs3X">
+                                <figure>
+                                    <img src="img/playlist/soulcalibur2.jpg" alt="soulcalibur" class="song-img hvr-grow">
+                                    <figcaption>
+                                        <h6>HISTORY UNFOLDS
+                                            <br>- SoulCalibur II</h6>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=juWVhhK_iDw&t=59s&ab_channel=Patu">
+                                <figure>
+                                    <img src="img/playlist/ambitions.jpg" alt="ambitions" class="song-img hvr-grow">
+                                    <figcaption>
+                                        <h6>AMBITIONS
+                                            <br>- j a r j a r j r</h6>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=yqcancyFBZU&ab_channel=BassIsAlive">
+                                <figure>
+                                    <img src="img/playlist/post-malone.jpg" alt="post malone" class="song-img hvr-grow">
+                                    <figcaption>
+                                        <h6>UP THERE
+                                            <br>- Post Malone</h6>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=REyxoxScrbU&ab_channel=CalvinHarrisVEVO">
+                                <figure>
+                                    <img src="img/playlist/hard-to-love.jpg" alt="jessie reyez" class="song-img hvr-grow">
+                                    <figcaption>
+                                        <h6>HARD TO LOVE
+                                            <br>- Calvin ft. Jessie</h6>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=2vvs4__2XRI&ab_channel=CookieAdventures">
+                                <figure>
+                                    <img src="img/playlist/intriguing-possibilities.jpg" alt="social network ost" class="song-img hvr-grow">
+                                    <figcaption>
+                                        <h6>INTRIGUING POSSIBILITIES
+                                            <br>- The Social Network</h6>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
                 <!-- podcast -->
-                    <div class="podcast">
-                        <h3>PODCASTS</h3>
-                        <ul>
-                            <li>
-                                <a href="https://www.youtube.com/playlist?list=PL_ZrazoFMI6d75xUVakLO79umIslJH8VM">
-                                    <figure>
-                                        <img src="img/playlist/fatman-on-batman.jpg" alt="fatman on batman" class="song-img hvr-grow">
-                                        <figcaption><h5>FATMAN ON BATMAN</h5></figcaption>
-                                    </figure>
-                                </a>
-                            </li>
+                <div class="podcast">
+                    <h3>PODCASTS</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PL_ZrazoFMI6d75xUVakLO79umIslJH8VM">
+                                <figure>
+                                    <img src="img/playlist/fatman-on-batman.jpg" alt="fatman on batman" class="song-img hvr-grow">
+                                </figure>
+                            </a>
+                        </li>
 
-                            <li>
-                                <a href="http://frontendhappyhour.com/">
-                                    <figure>
-                                        <img src="img/playlist/fehh.jpg" alt="front end happy hour" class="song-img hvr-grow">
-                                        <figcaption><h5>FRONT END HAPPY HOUR</h5></figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li>
+                            <a href="http://frontendhappyhour.com/">
+                                <figure>
+                                    <img src="img/playlist/fehh.jpg" alt="front end happy hour" class="song-img hvr-grow">
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
+
+        </div>
 
 
 <!-- =================================================
 -                       S O C I A L 
 ====================================================-->
 
-            <div class="section" id="social" data-anchor="social-section">
+        <div class="section" id="social" data-anchor="social-section">
 
-                <!-- back to top -->
-                <div class="back-to-top">
-                    <a href="#home-section">
-                        <figure>
-                            <img class="hvr-bob" src="img/back-to-top.png" alt="back to top owl">
-                            <figcaption><p>fly to top</p></figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <!-- social icons -->
-                <div class="social-content">
-                    <div class="social-icons">
-                        <ul>
-                            <li>
-                                <a href="https://github.com/Brooks-jr">
-                                    <figure class="github-icon">
-                                        <img src="img/poly-icons/poly-icons-lines-github.png" alt="github icon" class="icon hvr-pulse">
-                                        <figcaption><h4>.Github</h4></figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://twitter.com/J_BrooksJr">
-                                    <figure class="twitter-icon">
-                                        <img src="img/poly-icons/poly-icons-lines-twitter.png" alt="twitter icon" class="icon hvr-pulse">
-                                        <figcaption><h4>.Twitter</h4></figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://www.behance.net/Mr_Brooks">
-                                    <figure class="behance-icon">
-                                        <img src="img/poly-icons/poly-icons-lines-behance.png" alt="behance icon" class="icon hvr-pulse">
-                                        <figcaption><h4>.Behance</h4></figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://www.linkedin.com/in/jefferybrooksjr/">
-                                    <figure class="linkedin-icon">
-                                        <img src="img/poly-icons/poly-icons-lines-linkedin.png" alt="linkedin icon" class="icon hvr-pulse">
-                                        <figcaption><h4>.Linkedin</h4></figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <!-- back to top -->
+            <div class="back-to-top">
+                <a href="#home-section">
+                    <figure>
+                        <img class="hvr-bob" src="img/back-to-top.png" alt="back to top owl">
+                        <figcaption>
+                            <p>fly to top</p>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
 
-        
+            <!-- social icons -->
+            <div class="social-content">
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/Brooks-jr">
+                                <figure class="github-icon">
+                                    <img src="img/poly-icons/poly-icons-lines-github.png" alt="github icon" class="icon hvr-pulse">
+                                    <figcaption>
+                                        <h4 class="megrim">.Github</h4>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://twitter.com/J_BrooksJr">
+                                <figure class="twitter-icon">
+                                    <img src="img/poly-icons/poly-icons-lines-twitter.png" alt="twitter icon" class="icon hvr-pulse">
+                                    <figcaption>
+                                        <h4 class="megrim">.Twitter</h4>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.behance.net/Mr_Brooks">
+                                <figure class="behance-icon">
+                                    <img src="img/poly-icons/poly-icons-lines-behance.png" alt="behance icon" class="icon hvr-pulse">
+                                    <figcaption>
+                                        <h4 class="megrim">.Behance</h4>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/jefferybrooksjr/">
+                                <figure class="linkedin-icon">
+                                    <img src="img/poly-icons/poly-icons-lines-linkedin.png" alt="linkedin icon" class="icon hvr-pulse">
+                                    <figcaption>
+                                        <h4 class="megrim">.Linkedin</h4>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
 <!-- ============================================== -->
 
-        </div> <!-- FULLPAGE END -->
+    </div>
+<!-- FULLPAGE END -->
 
 <!-- =================================================
 -                   S C R I P T S 
-====================================================--> 
-             
-        <!-- JQUERY -->
-        <script src="js/jquery.js"></script>
+====================================================-->
 
-        <!-- BOOTSTRAP JS -->
-        <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- JQUERY -->
+    <script src="js/jquery.js"></script>
 
-        <!-- WOW -->
-        <script src="js/wow/wow.min.js"></script>
-        
-        <!-- EASING -->
-        <script src="js/easing/jquery.easing.1.3.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
 
-        <!-- FULL-PAGE -->
-        <script src="js/fullpage/jquery.fullPage.min.js"></script>
+    <!-- WOW -->
+    <script src="js/wow/wow.min.js"></script>
 
-        <!-- INOLA -->
-        <script src="js/inola/demo.js"></script>
-        
-        <!-- JAVASCRIPT -->
-        <script src="js/custom.js"></script>
-        
-        
-<!-- ============================================== -->
-       
-    </body>
+    <!-- EASING -->
+    <script src="js/easing/jquery.easing.1.3.js"></script>
+
+    <!-- FULL-PAGE -->
+    <script src="js/fullpage/jquery.fullPage.min.js"></script>
+
+    <!-- INOLA -->
+    <script src="js/inola/demo.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/custom.js"></script>
+
+
+    <!-- ============================================== -->
+
+</body>
 
 </html>

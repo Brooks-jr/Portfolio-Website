@@ -3,7 +3,12 @@
 ==================================================== */
 
 body {
-    font-family: "Roboto Condensed", sans-serif;
+    /* font-family: "Roboto Condensed", sans-serif; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.megrim {
+    font-family: 'Megrim', cursive;
 }
 
 #fullpage, .fullpage-wrapper {
@@ -161,8 +166,9 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     letter-spacing: 5px;
 }
 
-.menu__item-name {
+span .menu__item-name {
     text-transform: uppercase;
+    padding-top: 5px;
 }
 
 .menu--inola {
@@ -304,10 +310,11 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     color: #fff;
 }
 
-.project-desc h4 {
+.project-desc p {
     color: #ababab;
     letter-spacing: 1px;
-    line-height: 24px;
+    line-height: 20px;
+    font-size: 15px;
 }
 
 .desc-1 {
@@ -339,6 +346,7 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 /* =================================================
 -            P R O J E C T - S L I D E S
 ==================================================== */
+
 #vescoSlide, #portfolioSlide, #illustrationSlide {
     height: 100%;
     width: 0%;
@@ -368,27 +376,56 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 }
 
 .intro-wrapper {
-    display: inline-block;
+    position: relative;
     width: 100%;
     height: 100vh;
+    top: 0;
 }
 
 .intro-left, .intro-right {
-    height: 100vh;
+    height: 100%;
     width: 50%;
     position: absolute;
-    top: 0;
 }
 
 .intro-left {
     left: 0;
     background-image: url(../img/bg-intro-vesco.jpg);
+    height: 100%;
 }
 
 .intro-right {
     right: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
+.intro-right-text {
+    position: absolute;
+    top: 25%;
+    padding: 20px;
+}
+
+.intro-right-text p {
+    padding: 70px;
+    font-size: 24px;
+    color: #888888;
+}
+
+.intro-right h1 {
+    color: #292933;
+    font-size: 65px;
+    font-weight: 700;
+    border-bottom: 1px solid #645e72;
+    padding-bottom: 10px;
+}
+
+.mentions {
+    width: 100%;
+    height: 300px;
+    background: #292933;
+}
 
 /* =================================================
 -                     A B O U T 
@@ -409,9 +446,9 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 }
 
 .about-text-wrap-l h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .about-text-wrap-l p {
@@ -434,25 +471,12 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
 }
 
 .about-text-wrap-r ul li {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-bottom: .5px solid #3a3a43;
 }
 
 .about-text-wrap-r, .about-text-wrap-l {
     top: 20%;
-}
-
-.me .quote {
-    position: absolute;
-    font-weight: 400;
-    line-height: 40px;
-    font-size: 22px;
-    color: #c1b0e9;
-    padding: 0 100px;
-    margin: 0;
-    opacity: 1;
-    letter-spacing: 2px;
-    z-index: 9999999999;
 }
 
 .me {
@@ -480,7 +504,7 @@ span.hamburger-inner, span.hamburger-inner::before, span.hamburger-inner::after 
     height: 220px;
     position: absolute;
     z-index: 999999;
-    top: 70%;
+    top: 68%;
     left: 7%;
     overflow: hidden;
 }
@@ -512,7 +536,6 @@ article {
 
 article p, article p span, .name span {
     color: #ababab;
-    font-size: 15px;
 }
 
 article p span {
@@ -587,7 +610,7 @@ article .name {
 
 .playlist p {
     font-weight: 400;
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
     color: #645e72;
     text-transform: uppercase;
@@ -608,8 +631,6 @@ article .name {
 .podcast ul {
     width: 100%;
 }
-
-.podcast {}
 
 /* =================================================
 -                     S O C I A L
@@ -803,7 +824,7 @@ article .name {
 -            B G - I M A G E S
 ==================================================== */
 
-#social, .me, #work, .slide, .project-case {
+#social, .me, #work, .slide, .project-case, .intro-left {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
