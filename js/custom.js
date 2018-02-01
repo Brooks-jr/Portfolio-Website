@@ -18,6 +18,10 @@ $(function () {
     document.getElementById('cover-video').playbackRate = 5;
 });
 
+$(function () {
+    document.getElementsByClassName('sc-vid').playbackRate = 10;
+});
+
 // hamburger
 var $hamburger = $(".hamburger");
 
@@ -56,13 +60,11 @@ function toggleVescoSlide() {
     
     if (v.style.width === "0%") {
         v.style.width = "100%";
-    }
-    else if (v.style.width === "100%") {
-        v.style.width = "0%";
     } else {
         v.style.width = "100%";
     }
 }
+
 // portfolio
 function togglePortfolioSlide() {
     var p = document.getElementById("portfolioSlide")
@@ -78,14 +80,40 @@ function togglePortfolioSlide() {
 }
 // illustrations
 function toggleIllustrationSlide() {
-    var p = document.getElementById("illustrationSlide")
+    var i = document.getElementById("illustrationSlide")
     
-    if (p.style.width === "0%") {
-        p.style.width = "100%";
+    if (i.style.width === "0%") {
+        i.style.width = "100%";
     }
-    else if (p.style.width === "100%") {
-        p.style.width = "0%";
+    else if (i.style.width === "100%") {
+        i.style.width = "0%";
     } else {
-        p.style.width = "100%";
+        i.style.width = "100%";
     }
 }
+
+// slide back
+function slideBack() {
+    var v = document.getElementById("vescoSlide");
+    var p = document.getElementById("portfolioSlide")
+    var i = document.getElementById("illustrationSlide")
+    
+    if (v.style.width === "100%" || p.style.width === "100%" || i.style.width === "100%") {
+        v.style.width = "0%";
+        p.style.width = "0%";
+        i.style.width = "0%";
+        
+    }else {
+        v.style.width = "0%";
+        p.style.width = "0%";
+        i.style.width = "0%";
+    }
+}
+
+$(document).on('click', '.view-project', function(){
+    $.fn.fullpage.setAllowScrolling(false);
+});
+  
+$(document).on('click', '.close-slide, .hamburger', function(){
+    $.fn.fullpage.setAllowScrolling(true);
+});
