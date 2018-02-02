@@ -19,8 +19,23 @@ $(function () {
 });
 
 $(function () {
-    document.getElementsByClassName('sc-vid').playbackRate = 10;
+    document.getElementById('vesco-vid-1').playbackRate = 5;
 });
+
+$(function () {
+    document.getElementById('vesco-vid-2').playbackRate = 5;
+});
+
+$(function () {
+    document.getElementById('vesco-vid-3').playbackRate = 5;
+});
+
+$(function () {
+    document.getElementById('vesco-vid-4').playbackRate = 5;
+});
+// $(function () {
+//     document.getElementsByClassName('sc-vid').playbackRate = 5;
+// });
 
 // hamburger
 var $hamburger = $(".hamburger");
@@ -110,10 +125,12 @@ function slideBack() {
     }
 }
 
+// lock scroll
 $(document).on('click', '.view-project', function(){
     $.fn.fullpage.setAllowScrolling(false);
 });
-  
+
+// unlock scroll
 $(document).on('click', '.close-slide, .hamburger', function(){
     $.fn.fullpage.setAllowScrolling(true);
 });

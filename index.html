@@ -124,15 +124,19 @@
 -              P R O J E C T - S L I D E S 
 ====================================================-->
 
-    <!-- vesco case-->
+    <!-- VESCO CASE -->
     <div class="project-case" id="vescoSlide">
 
         <!-- close button -->
-        <button class="close-slide hvr-backward" type="button" onclick="slideBack()">- Slide Back</button>
+        <button class="close-slide hvr-backward megrim" type="button" onclick="slideBack()">- Slide Back</button>
 
         <!-- intro -->
         <div class="intro-wrapper">
-            <div class="intro-left"></div>
+            <div class="intro-left il-vesco">
+                <div class="intro-left-image">
+                    <img src="img/work/vesco-intro-1.png" alt="">
+                </div>
+            </div>
             <div class="intro-right">
                 <div class="intro-right-text">
                     <h1 class="megrim">.Modern & Responsive</h1>
@@ -141,16 +145,22 @@
                         built with a fully responsive layout. </p>
                 </div>
             </div>
+             <!-- scroll indicator -->
+             <div class="mouse wow slideInUp data-wow-duration='1s' data-wow-delay='.5s'">
+                    <div class="mouse-icon">
+                        <span class="mouse-wheel"></span>
+                    </div>
+                </div>
         </div>
 
         <!-- platforms -->
         <div class="platforms">
             <figure>
-                <img src="img/platforms/mobile-tablet-vesco.png" alt="">
+                <img src="img/work/platforms/mobile-tablet-vesco.png" alt="">
                 <figcaption><h3 class="megrim">mobile+tablet</h3></figcaption>
             </figure>
             <figure>
-                <img src="img/platforms/laptop-desktop-vesco.png" alt="">
+                <img src="img/work/platforms/laptop-desktop-vesco.png" alt="">
                 <figcaption><h3 class="megrim">laptop+desktop</h3></figcaption>
             </figure>
         </div>
@@ -158,31 +168,31 @@
         <!-- showcase -->
         <div class="showcase-container">
             <div class="showcase-video">
-                <video class="sc-vid" autoplay loop>
+                <video id="vesco-vid-1" class="sc-vid" autoplay loop>
                     <source src="video/vesco-vids/vid-vesco-1.mp4" type="video/mp4">
                 </video>
             </div>
 
-            <hr class="vid-break">
-            
+            <hr class="showcase-break">
+
             <div class="showcase-video">
-                <video class="sc-vid" autoplay loop>
+                <video id="vesco-vid-2" class="sc-vid" autoplay loop>
                     <source src="video/vesco-vids/vid-vesco-2.mp4" type="video/mp4">
                 </video>
             </div>
 
-            <hr class="vid-break">
+            <hr class="showcase-break">
             
             <div class="showcase-video">
-                <video class="sc-vid" autoplay loop>
+                <video id="vesco-vid-3" class="sc-vid" autoplay loop>
                     <source src="video/vesco-vids/vid-vesco-3.mp4" type="video/mp4">
                 </video>
             </div>
 
-            <hr class="vid-break">
+            <hr class="showcase-break">
             
             <div class="showcase-video">
-                <video class="sc-vid" autoplay loop>
+                <video id="vesco-vid-4" class="sc-vid" autoplay loop>
                     <source src="video/vesco-vids/vid-vesco-4.mp4" type="video/mp4">
                 </video>
             </div>
@@ -190,14 +200,102 @@
 
     </div>
 
-    <!-- portfolio case-->
+    <!-- PORTFOLIO CASE -->
     <div class="project-case" id="portfolioSlide">
-        <button class="close-slide" type="button" onclick="slideBack()">- Slide Back</button>
+        <button class="close-slide hvr-backward megrim" type="button" onclick="slideBack()">- Slide Back</button>
+
+         <!-- intro -->
+        <div class="intro-wrapper">
+            <div class="intro-left il-portfolio">
+                <div class="intro-left-image">
+                    <img src="img/work/portfolio-intro.png" alt="">
+                </div>
+            </div>
+            <div class="intro-right">
+                <div class="intro-right-text">
+                    <h1 class="megrim">.Personal Portfolio</h1>
+                    <p>Surprise! you're visiting it. Portfolio speaks for itself, it was very experimental for me. My site was born using a few new concepts, mostly animations, scouring Dribble and Awwwards like an MMO looter, and chemical X. <br><span class="update">[ *Will update later for mobile ]</span></p>
+                </div>
+            </div>
+                <!-- scroll indicator -->
+                <div class="mouse wow slideInUp data-wow-duration='1s' data-wow-delay='.5s'">
+                    <div class="mouse-icon">
+                        <span class="mouse-wheel"></span>
+                    </div>
+                </div>
+        </div>
+
+        <!-- platforms -->
+        <div class="platforms">
+            <figure>
+                <img src="img/work/platforms/laptop-desktop-portfolio.png" alt="">
+                <figcaption><h3 class="megrim">laptop+desktop</h3></figcaption>
+            </figure>
+        </div>
+    
     </div>
 
-    <!-- illustration case-->
+    <!-- ILLUSTRATION CASE -->
     <div class="project-case" id="illustrationSlide">
-        <button class="close-slide" type="button" onclick="slideBack()">- Slide Back</button>
+        <button class="close-slide hvr-backward megrim" type="button" onclick="slideBack()">- Slide Back</button>
+
+        <!-- intro -->
+        <div class="intro-wrapper">
+                <div class="intro-left il-illustration">
+                    <div class="intro-left-image">
+                        <img src="img/work/illustration-intro-1.png" alt="">
+                    </div>
+                </div>
+                <div class="intro-right">
+                    <div class="intro-right-text">
+                        <h1 class="megrim">.graphic illustration</h1>
+                        <p>Wielding the power of <span class="ai">Adobe Illustrator</span> , with a little assistance from <span class="ps">Adobe Photoshop</span> , I mold pixels into the likes of Custom Icons, Brand Logos, Web Favicons, Apparel Design, & More. </p>
+                    </div>
+                </div>
+                 <!-- scroll indicator -->
+                 <div class="mouse wow slideInUp data-wow-duration='1s' data-wow-delay='.5s'">
+                        <div class="mouse-icon">
+                            <span class="mouse-wheel"></span>
+                        </div>
+                    </div>
+            </div>
+    
+            <!-- platforms -->
+            <div class="platforms">
+                <a href="https://www.behance.net/Mr_Brooks">
+                    <figure class="behance-icon">
+                        <img src="img/poly-icons/poly-icons-lines-behance.png" alt="behance icon" class="icon hvr-pulse">
+                        <figcaption>
+                            <h4 class="megrim">.Behance</h4>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+    
+            <!-- showcase -->
+            <div class="showcase-container">
+                <div class="showcase-img">
+                    <img src="img/work/illustration-showcase/img-illustration-1.jpg" alt="mock ups">
+                </div>
+    
+                <hr class="showcase-break">
+    
+                <div class="showcase-img">
+                    <img src="img/work/illustration-showcase/img-illustration-2.jpg" alt="custom icons">
+                </div>
+    
+                <hr class="showcase-break">
+                
+                <div class="showcase-img">
+                    <img src="img/work/illustration-showcase/img-illustration-3.jpg" alt="personal logo">        
+                </div>
+
+                <hr class="showcase-break">
+                
+                <div class="showcase-img">
+                    <img src="img/work/illustration-showcase/img-illustration-4.png" alt="apparel graphic">        
+                </div>
+            </div>
     </div>
 
 <!-- ============================================== -->

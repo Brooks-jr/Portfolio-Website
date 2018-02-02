@@ -260,7 +260,7 @@ span .menu__item-name {
 ==================================================== */
 
 #work {
-    background-image: url(../img/bg-work.jpg);
+    background-image: url(../img/work/bg-work.jpg);
     padding: 110px 90px 55px 80px;
 }
 
@@ -356,7 +356,7 @@ span .menu__item-name {
     position: fixed;
     z-index: 1;
     top: 0;
-    background-image: url(../img/bg-slides-bw.jpg);
+    background-image: url(../img/work/bg-slides-bw.jpg);
     overflow-x: hidden;
     transition: .5s;
 }
@@ -371,6 +371,7 @@ span .menu__item-name {
     font-size: 16px;
     z-index: 9;
     color: #fff;
+    font-weight: 700;
 }
 
 .close-slide:hover {
@@ -392,8 +393,23 @@ span .menu__item-name {
 
 .intro-left {
     left: 0;
-    background-image: url(../img/bg-intro-vesco.jpg);
-    height: 100%;
+}
+
+.il-vesco {
+    background-image: url(../img/work/bg-intro-vesco.jpg);
+}
+
+.il-portfolio {
+    background-image: url(../img/work/bg-intro-portfolio.jpg);
+}
+
+.il-illustration {
+    background-image: url(../img/work/bg-intro-illustration.jpg);
+}
+
+.intro-left-image {
+    position: absolute;
+    top: 25%;
 }
 
 .intro-right {
@@ -415,12 +431,27 @@ span .menu__item-name {
     color: #888888;
 }
 
+.update {
+    color: orangered;
+    font-size: 14px;
+}
+
+.ai {
+    color: rgb(179, 136, 28);
+}
+
+.ps {
+    color: rgb(102, 151, 182);
+}
+
 .intro-right h1 {
     color: #292933;
     font-size: 65px;
     font-weight: 700;
     border-bottom: 1px solid #645e72;
     padding-bottom: 10px;
+    text-align: center;
+    
 }
 
 .platforms {
@@ -447,25 +478,34 @@ span .menu__item-name {
     margin-top: 0;
 }
 
+.platforms a .behance-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.platforms a, .platforms a .behance-icon figcaption {
+    margin-top: 25px;
+}
+
 .showcase-container {
     width: 100%;
     background: #1c1c1c;
 }
 
-.showcase-video {
+.showcase-video, .showcase-img {
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-.showcase-video video {
+.showcase-video video, .showcase-img img {
     width: 50%;
     height: 25%;
     margin: 40px 0;
 }
 
-.vid-break {
+.showcase-break {
     width: 40%;
     opacity: .1;
 }
