@@ -1,0 +1,37 @@
+/*=======================================================
+-                    MEDIA QUERIES
+=======================================================*/
+
+/* EXTRA LARGE DEVICES (Large Desktops) */
+
+@media(min-width: 1200px) {}
+
+/* LARGE DEVICES (Desktops & Laptops) */
+
+@media(min-width: 992px) and (max-width: 1199px) {
+ 
+}
+
+/* MEDIUM DEVICES (Laptops & Tablets) */
+
+@media(min-width: 768px) and (max-width: 991.5px) {
+  
+}
+
+/* SMALL DEVICES (Landscape Phones) */
+
+@media(min-width: 576px) and (max-width: 767.5px) {
+    
+}
+
+/* EXTRA SMALL DEVICES (Portrait Phones)*/
+
+@media(max-width: 575.5px) {
+    
+}
+
+/* SMALLEST DEVICES (SmartWatches) */
+
+@media(max-width: 320.5px) {
+   
+}

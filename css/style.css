@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 span .menu__item-name, .close-slide, .playlist h3, .playlist p, .social-icons figcaption, .back-to-top, .platforms figcaption {
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
 /* =================================================
@@ -451,7 +451,6 @@ span .menu__item-name {
     border-bottom: 1px solid #645e72;
     padding-bottom: 10px;
     text-align: center;
-    
 }
 
 .platforms {
