@@ -1,4 +1,7 @@
-// FULL-PAGE
+
+// =================================================
+// -           F U L L - P A G E
+// =================================================
 $(function () {
     $('#fullpage').fullpage({
         anchors: ['home-section', 'work-section', 'about-section', 'social-section'],
@@ -10,7 +13,9 @@ $(function () {
     });
 });
 
-// video playback rate
+// =================================================
+// -                V I D E O S
+// =================================================
 $(function () {
     document.getElementById('cover-video').playbackRate = 5;
 });
@@ -34,15 +39,16 @@ $(function () {
 //     document.getElementsByClassName('sc-vid').playbackRate = 5;
 // });
 
-// hamburger
+// =================================================
+// -              H A M B U R G E R
+// =================================================
 var $hamburger = $(".hamburger");
-
 $hamburger.on("click", function (e) {
     $hamburger.toggleClass("is-active");
 });
+
 // menu link
 var $menuLink = $(".menu__item-name");
-
 $menuLink.on("click", function (e) {
     $hamburger.toggleClass("is-active");
 });
@@ -60,12 +66,18 @@ function toggleNav() {
     }
 }
 
+// =================================================
+// -                W O W
+// =================================================
 // trigger animation on scroll
 $(function () {
     new WOW().init();
 });
 
-// TOGGLE PROJECT SLIDES
+// =================================================
+// -        P R O J E C T - S L I D E S
+// =================================================
+
 // vesco
 function toggleVescoSlide() {
     var v = document.getElementById("vescoSlide");
@@ -104,7 +116,7 @@ function toggleIllustrationSlide() {
     }
 }
 
-// slide back
+// slide back button
 function slideBack() {
     var v = document.getElementById("vescoSlide");
     var p = document.getElementById("portfolioSlide")
@@ -122,6 +134,10 @@ function slideBack() {
     }
 }
 
+// =================================================
+// -            S C R O L L - L O C K
+// =================================================
+
 // lock scroll
 $(document).on('click', '.view-project', function () {
     $.fn.fullpage.setAllowScrolling(false);
@@ -132,7 +148,10 @@ $(document).on('click', '.close-slide, .hamburger', function () {
     $.fn.fullpage.setAllowScrolling(true);
 });
 
-// ANIMATION
+// =================================================
+// -             A N I M A T I O N S
+// =================================================
+
 $('#fullpage').fullpage({
     navigation: true,
     slidesNavigation: true,
@@ -157,13 +176,13 @@ $('#fullpage').fullpage({
             $isAnimatedAbout3.addClass('animated fadeInUpBig wow data-wow-duration="5s"').css('animation-delay', '.7s');
 
         }
-        else if( ( index == 1 || index == 2 || index == 3 ) && nextIndex == 4 ) {
-            $isAnimatedSocial.addClass('animated fadeInUpBig wow data-wow-duration="5s"'); 
+        else if ((index == 1 || index == 2 || index == 3) && nextIndex == 4) {
+            $isAnimatedSocial.addClass('animated fadeInUpBig wow data-wow-duration="5s"');
             $isAnimatedSocial.eq(1).css('animation-delay', '.3s');
             $isAnimatedSocial.eq(2).css('animation-delay', '.6s');
             $isAnimatedSocial.eq(3).css('animation-delay', '.9s');
 
-            $isAnimatedSocial2.addClass('animated fadeInDownBig wow data-wow-duration="5s"'); 
+            $isAnimatedSocial2.addClass('animated fadeInDownBig wow data-wow-duration="5s"');
         }
     }
 });
