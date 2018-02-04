@@ -191,7 +191,6 @@ span .menu__item-name {
     transform: rotate(-90deg) translate3d(-105.5%, 0, 0);
     color: #fff;
     list-style: none;
-    letter-spacing: 1px;
     opacity: .8;
     font-size: 14px;
 }
@@ -311,6 +310,7 @@ span .menu__item-name {
 
 .project-desc h2 {
     color: #fff;
+    font-weight: 700;
 }
 
 .project-desc p {
