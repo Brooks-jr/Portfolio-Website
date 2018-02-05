@@ -9,6 +9,7 @@ body {
 
 .megrim, #fp-nav ul li .fp-tooltip {
     font-family: 'Megrim', cursive;
+    font-weight: 700;
 }
 
 #fullpage, .fullpage-wrapper {

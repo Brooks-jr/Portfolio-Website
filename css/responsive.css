@@ -4,12 +4,14 @@
 
 /* EXTRA LARGE DEVICES (Large Desktops) */
 
-@media(min-width: 1200px) {}
+@media(min-width: 1200px) {
+
+}
 
 /* LARGE DEVICES (Desktops & Laptops) */
 
 @media(min-width: 992px) and (max-width: 1199px) {
- 
+    
 }
 
 /* MEDIUM DEVICES (Laptops & Tablets) */

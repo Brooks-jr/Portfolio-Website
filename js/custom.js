@@ -165,9 +165,12 @@ $('#fullpage').fullpage({
         var $isAnimatedSocial = $('.social .is-animated');
         var $isAnimatedSocial2 = $('.social .is-animated-2');
 
+        // work section
         if (index == 1 && nextIndex == 2) {
-            $isAnimatedWork.addClass('animated fadeInLeftBig wow data-wow-duration="5s" ').css('animation-delay', '.7s');
+            $isAnimatedWork.addClass('animated bounceInRight wow data-wow-duration="5s" ').css('animation-delay', '.7s');
         }
+
+        // about section
         else if ((index == 1 || index == 2) && nextIndex == 3) {
             $isAnimatedAbout.addClass('animated rollIn wow data-wow-duration="5s"').css('animation-delay', '.7s');
 
@@ -176,6 +179,8 @@ $('#fullpage').fullpage({
             $isAnimatedAbout3.addClass('animated fadeInUpBig wow data-wow-duration="5s"').css('animation-delay', '.7s');
 
         }
+
+        // social section
         else if ((index == 1 || index == 2 || index == 3) && nextIndex == 4) {
             $isAnimatedSocial.addClass('animated fadeInUpBig wow data-wow-duration="5s"');
             $isAnimatedSocial.eq(1).css('animation-delay', '.3s');
