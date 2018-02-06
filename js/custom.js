@@ -13,7 +13,8 @@ $(function () {
         navigation: true,
         slidesNavigation: true,
         navigationTooltips: ['.Home', '.Work', '.About', '.Social'],
-    
+
+        // ANIMATIONS
         onLeave: function (index, nextIndex, direction) {
             var $isAnimatedWork = $('.work .is-animated');
             var $isAnimatedAbout = $('.about .is-animated');
@@ -48,6 +49,9 @@ $(function () {
             }
         }
     });
+    
+    var $controlArrowHover = $('.fp-controlArrow');
+    $controlArrowHover.addClass('hvr-wobble-horizontal');
 });
 
 // =================================================
@@ -128,7 +132,7 @@ function toggleVescoSlide() {
 
 // portfolio
 function togglePortfolioSlide() {
-    var p = document.getElementById("portfolioSlide")
+    var p = document.getElementById("portfolioSlide");
 
     if (p.style.width === "0%") {
         p.style.width = "100%";
@@ -141,7 +145,7 @@ function togglePortfolioSlide() {
 }
 // illustrations
 function toggleIllustrationSlide() {
-    var i = document.getElementById("illustrationSlide")
+    var i = document.getElementById("illustrationSlide");
 
     if (i.style.width === "0%") {
         i.style.width = "100%";
@@ -156,8 +160,8 @@ function toggleIllustrationSlide() {
 // slide back button
 function slideBack() {
     var v = document.getElementById("vescoSlide");
-    var p = document.getElementById("portfolioSlide")
-    var i = document.getElementById("illustrationSlide")
+    var p = document.getElementById("portfolioSlide");
+    var i = document.getElementById("illustrationSlide");
 
     if (v.style.width === "100%" || p.style.width === "100%" || i.style.width === "100%") {
         v.style.width = "0%";
