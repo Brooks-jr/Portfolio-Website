@@ -10,6 +10,43 @@ $(function () {
         easingcss3: 'ease',
         loopHorizontal: true,
         continuousHorizontal: true,
+        navigation: true,
+        slidesNavigation: true,
+        navigationTooltips: ['.Home', '.Work', '.About', '.Social'],
+    
+        onLeave: function (index, nextIndex, direction) {
+            var $isAnimatedWork = $('.work .is-animated');
+            var $isAnimatedAbout = $('.about .is-animated');
+            var $isAnimatedAbout2 = $('.about .is-animated-2');
+            var $isAnimatedAbout3 = $('.about .is-animated-3');
+            var $isAnimatedSocial = $('.social .is-animated');
+            var $isAnimatedSocial2 = $('.social .is-animated-2');
+    
+            // work section
+            if (index == 1 && nextIndex == 2) {
+                $isAnimatedWork.addClass('animated bounceInRight wow data-wow-duration="5s" ').css('animation-delay', '.7s');
+            }
+    
+            // about section
+            else if ((index == 1 || index == 2) && nextIndex == 3) {
+                $isAnimatedAbout.addClass('animated rollIn wow data-wow-duration="5s"').css('animation-delay', '.7s');
+    
+                $isAnimatedAbout2.addClass('animated zoomIn wow data-wow-duration="5s"').css('animation-delay', '.7s');
+    
+                $isAnimatedAbout3.addClass('animated fadeInUpBig wow data-wow-duration="5s"').css('animation-delay', '.7s');
+    
+            }
+    
+            // social section
+            else if ((index == 1 || index == 2 || index == 3) && nextIndex == 4) {
+                $isAnimatedSocial.addClass('animated fadeInUpBig wow data-wow-duration="5s"');
+                $isAnimatedSocial.eq(1).css('animation-delay', '.3s');
+                $isAnimatedSocial.eq(2).css('animation-delay', '.6s');
+                $isAnimatedSocial.eq(3).css('animation-delay', '.9s');
+    
+                $isAnimatedSocial2.addClass('animated fadeInDownBig wow data-wow-duration="5s"');
+            }
+        }
     });
 });
 
@@ -152,42 +189,3 @@ $(document).on('click', '.close-slide, .hamburger', function () {
 // -             A N I M A T I O N S
 // =================================================
 
-$('#fullpage').fullpage({
-    navigation: true,
-    slidesNavigation: true,
-    navigationTooltips: ['.Home', '.Work', '.About', '.Social'],
-
-    onLeave: function (index, nextIndex, direction) {
-        var $isAnimatedWork = $('.work .is-animated');
-        var $isAnimatedAbout = $('.about .is-animated');
-        var $isAnimatedAbout2 = $('.about .is-animated-2');
-        var $isAnimatedAbout3 = $('.about .is-animated-3');
-        var $isAnimatedSocial = $('.social .is-animated');
-        var $isAnimatedSocial2 = $('.social .is-animated-2');
-
-        // work section
-        if (index == 1 && nextIndex == 2) {
-            $isAnimatedWork.addClass('animated bounceInRight wow data-wow-duration="5s" ').css('animation-delay', '.7s');
-        }
-
-        // about section
-        else if ((index == 1 || index == 2) && nextIndex == 3) {
-            $isAnimatedAbout.addClass('animated rollIn wow data-wow-duration="5s"').css('animation-delay', '.7s');
-
-            $isAnimatedAbout2.addClass('animated zoomIn wow data-wow-duration="5s"').css('animation-delay', '.7s');
-
-            $isAnimatedAbout3.addClass('animated fadeInUpBig wow data-wow-duration="5s"').css('animation-delay', '.7s');
-
-        }
-
-        // social section
-        else if ((index == 1 || index == 2 || index == 3) && nextIndex == 4) {
-            $isAnimatedSocial.addClass('animated fadeInUpBig wow data-wow-duration="5s"');
-            $isAnimatedSocial.eq(1).css('animation-delay', '.3s');
-            $isAnimatedSocial.eq(2).css('animation-delay', '.6s');
-            $isAnimatedSocial.eq(3).css('animation-delay', '.9s');
-
-            $isAnimatedSocial2.addClass('animated fadeInDownBig wow data-wow-duration="5s"');
-        }
-    }
-});

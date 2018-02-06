@@ -11,7 +11,85 @@
 /* LARGE DEVICES (Desktops & Laptops) */
 
 @media(min-width: 992px) and (max-width: 1199px) {
-    
+
+    #home-logo {
+        left: 10%;
+    }
+
+    #myNav {
+        padding-top: 17.5%;
+        margin-right: 5%;
+    }
+
+    #fp-nav.right {
+        margin-right: 120px;
+    }
+    .intro-left-image {
+        top: 35%;
+    }
+
+    .intro-left-image img {
+        width: 550px;
+        height: 350px;
+    }
+
+    .intro-right h1 {
+        padding-right: 52px;
+    }
+
+    /* ABOUT SECTION */
+    .about-text-wrap-l {
+        width: 55%;
+        left: 45%;
+        position: relative;
+        letter-spacing: 1px;
+        display: inline-block;
+        font-size: 1vw;
+    }
+
+    .playlist a img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .playlist {
+        padding-top: 8%;
+    }
+
+    .podcast ul li a img {
+        width: 110px;
+        height: 140px;
+        max-width: 170px;
+    }
+
+    article .name {
+        font-size: 23px;
+    }
+
+    /* SOCIAL SECTION */
+    .social-icons ul {
+        display: block;
+        padding-left: 155px;
+    }
+
+    .social-icons {
+        top: 20%;
+    }
+
+    .back-to-top {
+        left: 43%;
+        font-size: 14px;
+    }
+
+    .social-icons ul li {
+        margin-bottom: 40px;
+    }
+
+    /* NAV */
+    .nav-button {
+        right: -8%;
+    }
+
 }
 
 /* MEDIUM DEVICES (Laptops & Tablets) */
