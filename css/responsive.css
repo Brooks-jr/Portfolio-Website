@@ -22,7 +22,7 @@
     }
 
     #fp-nav.right {
-        margin-right: 100px;
+        margin-right: 20px;
     }
     .intro-left-image {
         top: 35%;
@@ -33,8 +33,18 @@
         height: 350px;
     }
 
-    .intro-right h1 {
-        padding-right: 52px;
+    .intro-right-text p {
+        margin-top: 50px;
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .showcase-video video {
+        margin: 10px 0;
+    }
+
+    .showcase-img img {
+        margin: 10px 0;
     }
 
     /* ABOUT SECTION */

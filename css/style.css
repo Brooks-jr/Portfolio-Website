@@ -3,7 +3,6 @@
 ==================================================== */
 
 body {
-    /* font-family: "Roboto Condensed", sans-serif; */
     font-family: 'Raleway', sans-serif;
 }
 
@@ -411,6 +410,7 @@ span .menu__item-name {
 .intro-left-image {
     position: absolute;
     top: 25%;
+    right: 2%;
 }
 
 .intro-right {
